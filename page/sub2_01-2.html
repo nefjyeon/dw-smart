@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+  <!--[if IE 8 ]> <html class="no-js lt-ie9 ie8" lang="ko-KR">
+    <![endif]--><!--[if IE 9 ]> <html class="no-js lt-ie10 ie9" lang="ko-KR">
+    <![endif]--><!--[if (gte IE 10)|!(IE)]><!-->
+  <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>두원공과대학교 스마트교육행정시스템</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,800,900,500">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/board.css?v=1">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2">
+
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<link rel="stylesheet" href="/css/jquery-ui.css">
+<link rel="stylesheet" href="/css/jquery-ui-timepicker-addon.css">
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<script type="text/javascript" src="/lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-sliderAccess.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="/lib/jquery.play.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/js/jquery.ncs.js"></script>
+<script type="text/javascript" src="/lib/jquery.form.js"></script>
+<script type="text/javascript" src="/lib/placeholders.min.js"></script>
+
+<link rel="stylesheet" href="/css-new/responsive.css?v=1">
+<script type="text/javascript" src="/js/jquery.ncs.new.js?v=1"></script>
+<script src="https://kit.fontawesome.com/6026cbbd9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="wrap-new">
+	<!-- Header -->
+
+
+  <div id="wrap-new">
+	<!-- Header -->
+
+  <!-- 관리자, 교직원 -->
+	<header id="header-new">
+		<div class="login-new">
+			<div class="wrap-admin">
+				<i class="icon admin"></i><span><a href="#">시스템관리자님</a> 환영합니다.</span>
+			</div>
+			<div class="btn-area">
+				<a href="#" class="button system-btn"><span>로그아웃</span></a>
+			</div>
+		</div>
+
+		<div class="header-new">
+			
+			<div class="col-left">
+				<h1>
+					<a href="../login.html">
+						<picture>
+							<source media="(max-width: 1024px)" srcset="../img/logo_doowon-wh.svg">
+							<source media="(min-width: 1025px)" srcset="../img/logo_doowon-ori.svg">
+							<img src="../img/logo_doowon-ori.svg" alt="두원공과대학교 스마트교육행정시스템">
+						</picture>
+					</a>
+				</h1>
+			</div>
+			<div class="col-right">
+				
+				<!-- Nav -->
+				<nav id="nav-new">
+					<div class="mobile-menu xs-show"><a href="#none"><i class="icon mb-menu"></i></a>
+						<span>강의평가</span>
+					</div>
+					<ul class="nav-new">
+						<li class="">
+							<a href="#">대시보드</a>
+						</li>
+						<li class="">
+							<a href="#">수강신청 관리</a>
+						</li>
+						<li class="active">
+							<a href="#">강의평가 관리</a>
+						</li>
+						<li class="">
+							<a href="#">휴복학 관리</a>
+						</li>
+						<li class="">
+							<a href="#">시스템 관리</a> 
+						</li>
+						<li class="">
+							<a href="#">공지사항</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- //Nav -->
+			</div>
+		</div>
+	</header>
+	<!-- //관리자, 교직원 -->
+	<!-- //Header -->
+
+
+	<!-- Container --> 
+	<section class="sub-container" >
+
+		<div class="mobile-lnb xs-show">
+			<select id="lnbOperationSelect" class="" onchange="goLnb(this, '', '');">
+				<option selected="" value="">강의 현황</option>
+				<option value="">서브메뉴 2</option>
+				<option value="">서브메뉴 3</option>
+			</select>
+		</div>
+
+		<!-- 사이드메뉴시작 -->
+		<div class="col-lnb">
+
+			<div class="lnb-title">
+				<p>강의평가</p>
+			</div>
+
+			<!-- 진짜메뉴시작 -->
+      <div class="lnb lnb2 xs-hidden">
+				
+				<div class="lnb-menu active ">
+					<a href="#">
+						<p class=" active">강의 현황</p>
+					</a>
+				</div>
+        
+				<div class="lnb-menu ">
+					<a href="#">
+						<p class="">서브메뉴 2</p>
+					</a>
+				</div>
+              
+				<div class="lnb-menu ">  
+					<a href="#">
+						<p class="">서브메뉴 3</p>
+					</a>
+				</div>
+			</div>
+			<!-- 진짜메뉴끝 -->
+
+		</div>
+		<!-- 사이드메뉴끝 -->
+
+
+
+    <!-- 관리자 -->
+		<div class="col-contents">
+			<div class="subCon">
+				<!-- 컨텐츠 영역 -->
+          <h3>강의평가 결과</h3>
+					
+          <form name="frmSubject" onsubmit="return false;">
+            <div class="group-search center_search">
+							
+              <div class="chk-round">
+								<input type="checkbox" id="wordFilter" class="screen-reader">
+								<div class="label-box">
+									<span class="check-icon" aria-hidden="true"></span>
+									<label for="wordFilter">주관식 검열 단어 포함</label>
+								</div>
+							</div>
+							<select name="dep1" id="dep1">
+                <option value="">=학년도=</option>
+                <option value="123">2026</option>
+                <option value="124">2025</option>		
+                <option value="123">2024</option>
+              </select>
+							<select name="dep2" id="dep2">
+                <option value="">=학기=</option>
+                <option value="123">1학기</option>
+                <option value="124">여름계절학기</option>		
+                <option value="123">3학기</option>
+                <option value="124">겨울계절학기</option>		
+              </select>
+              <select name="dep3" id="dep3">
+                <option value="">=학년=</option>
+                <option value="124">1</option>		
+                <option value="123">2</option>
+                <option value="123">3</option>
+                <option value="123">4</option>
+              </select>
+							<select name="dep5" id="dep5">
+                <option value="">=학과=</option>
+                <option value="124" selected>간호학과</option>		
+                <option value="123">학과2</option>
+								<option value="125">학과3</option>
+              </select>
+
+              <label for="list-search">
+                <input type="search" id="list-search" name="search_value" style="min-width:60px; width:140px;"><a href="#goSearch" class="sBtn schBtn" onclick="goSearch();return false;"><img src="/img/btn_search.png" alt=""></a>
+              </label> 
+            </div>
+          </form>
+
+
+					<div class="tabBox">
+            
+            <!-- 테이블 여러 개 붙여야 할 시 .-attach 클래스 반드시 추가 -->
+            <!-- sub2_01-1.html 의 테이블을 가져다 쓰면 되며, 체크박스 기능만 사라집니다 -->
+            <!-- 만약 한 테이블에 다 보여주고자 하면 .-attach 는 반드시 제거-->
+ 						<div class="wrap-table table-responsive -attach">
+							<table class="headTbl tdLine bdl bdr -nth1">
+								<colgroup>
+									<col style="width:6%">
+									<col style="width:9%">
+									<col style="width:18%">
+									<col style="width:25%">
+									<col style="width:6%">
+									<col style="width:8%">
+									<col style="width:8%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>학년도</th>
+										<th>학기</th>
+										<th>학과</th>
+										<th>교과목명</th>
+										<th>학년</th>
+										<th>강좌번호</th>
+										<th>참여 대상자 수</th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td>2025</td>
+										<td>1학기</td>
+										<td>간호학과</td>
+										<td>간호과정과비판적사고</td>
+										<td>2</td>
+										<td>79</td>
+										<td>오재철</td>
+									</tr>
+
+									<tr>
+										<td>2025</td>
+										<td>1학기</td>
+										<td>간호학과</td>
+										<td>간호과정과비판적사고</td>
+										<td>2</td>
+										<td>79</td>
+										<td>오재철</td>
+									</tr>
+
+									<tr>
+										<td>2025</td>
+										<td>1학기</td>
+										<td>간호학과</td>
+										<td>간호과정과비판적사고</td>
+										<td>2</td>
+										<td>81</td>
+										<td>오재철</td>
+									</tr>
+
+									<tr>
+										<td>2025</td>
+										<td>1학기</td>
+										<td>간호학과</td>
+										<td>간호관리학2</td>
+										<td>2</td>
+										<td>135</td>
+										<td>김승희</td>
+									</tr>
+
+									<tr>
+										<td>2025</td>
+										<td>1학기</td>
+										<td>간호학과</td>
+										<td>간호관리학2</td>
+										<td>2</td>
+										<td>136</td>
+										<td>이효정</td>
+									</tr>
+
+									<tr>
+										<td>2025</td>
+										<td>1학기</td>
+										<td>간호학과</td>
+										<td>간호관리학2</td>
+										<td>2</td>
+										<td>137</td>
+										<td>황이현</td>
+									</tr>
+
+									<tr>
+										<td>2025</td>
+										<td>1학기</td>
+										<td>간호학과</td>
+										<td>간호관리학실습</td>
+										<td>2</td>
+										<td>144</td>
+										<td>조응민</td>
+									</tr>
+
+									<tr>
+										<td>2025</td>
+										<td>1학기</td>
+										<td>간호학과</td>
+										<td>간호관리학실습</td>
+										<td>2</td>
+										<td>145</td>
+										<td>황이현</td>
+									</tr>
+
+									<tr>
+										<td>2025</td>
+										<td>1학기</td>
+										<td>간호학과</td>
+										<td>간호관리학실습</td>
+										<td>2</td>
+										<td>146</td>
+										<td>정명철</td>
+									</tr>
+
+								</tbody>
+							</table>
+
+
+							<!-- 총괄평가 테이블 / 체크 여부에 따른 show , hide 영역 -->
+							<!-- show , hide table엔 bdl클래스 제거 및 -nth2 클래스 필수 -->
+              <!-- sub2_01-1.html 의 테이블을 가져다 쓰면 되며, 체크박스 기능만 사라집니다 -->
+							<table id="et2" class="headTbl tdLine bdr -nth2">
+								<colgroup>
+									<col style="width:33.3333%">
+									<col style="width:33.3333%">
+									<col style="width:33.3333%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="3" class="bdb">총괄평가</th>
+									</tr>
+									<tr>
+										<th>참여자 수</th>
+										<th>참여율</th>
+										<th>평가점수</th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td>714</td>
+										<td>72.34%</td>
+										<td><a href="sub2_01-3.html" class="btn low">4.56</a></td>
+                    <!-- sub2_01-3.html 교과목 상세 페이지로 이동 (기획서 13p) -->
+									</tr>
+
+									<tr>
+										<td>592</td>
+										<td>86.68%</td>
+										<td><a href="#" class="btn low">4.55</a></td>
+									</tr>
+
+									<tr>
+										<td>673</td>
+										<td>82.07%</td>
+										<td><a href="#" class="btn low">4.39</a></td>
+									</tr>
+
+									<tr>
+										<td>486</td>
+										<td>86.63%</td>
+										<td><a href="#" class="btn low">4.76</a></td>
+									</tr>
+
+									<tr>
+										<td>606</td>
+										<td>90.72%</td>
+										<td><a href="#" class="btn low">4.49</a></td>
+									</tr>
+
+									<tr>
+										<td>348</td>
+										<td>74.2%</td>
+										<td><a href="#" class="btn low">4.44</a></td>
+									</tr>
+
+									<tr>
+										<td>732</td>
+										<td>84.43%</td>
+										<td><a href="#" class="btn low">4.72</a></td>
+									</tr>
+
+									<tr>
+										<td>735</td>
+										<td>79.72%</td>
+										<td><a href="#" class="btn low">4.73</a></td>
+									</tr>
+
+									<tr>
+										<td>106</td>
+										<td>83.46%</td>
+										<td><a href="#" class="btn low">4.62</a></td>
+									</tr>
+
+								</tbody>
+							</table>
+							<!-- // 총괄평가 테이블  -->
+
+						</div>
+					</div>
+					
+					<div class="pag"> 
+						<a class="img"><img src="/images/common/btn_prev_l.gif" alt=""></a>
+						<a class="img"><img src="/images/common/btn_prev.gif" alt=""></a>			
+						<span>
+							<a class="on">1</a>
+							<a href="2" onclick="goPage(2, ''); return false;">2</a>
+							<a href="2" onclick="goPage(3, ''); return false;">3</a>
+							<a href="2" onclick="goPage(4, ''); return false;">4</a>
+							<a href="2" onclick="goPage(5, ''); return false;">5</a>
+              <a href="2" onclick="goPage(6, ''); return false;">6</a>
+              <a href="2" onclick="goPage(7, ''); return false;">7</a>
+              <a href="2" onclick="goPage(8, ''); return false;">8</a>
+              <a href="2" onclick="goPage(9, ''); return false;">9</a>
+              <a href="2" onclick="goPage(10, ''); return false;">10</a>
+						</span>
+						<a class="img"><img src="/images/common/btn_next.gif" alt=""></a>
+						<a href="2" onclick="goPage(2, ''); return false;" class="img"><img src="/images/common/btn_next_l.gif" alt=""></a>
+					</div>
+	
+					
+          <div class="wrap-btn -multi -dt">
+						<span>
+              <a href="sub2_01-1.html" class="btn btn-mid l-gray">목록</a>
+							<!-- <a href="sub4_01.html" class="btn btn-mid l-blue">미참여자 확인</a> -->
+            </span>
+						<span>
+							<a href="#none" class="btn btn-mid excel">목록정보(엑셀) 다운로드</a>
+							<!-- <a href="sub2_00-2.html" class="btn btn-mid d-gray">기본정보 등록</a> -->
+							<!-- <a href="sub4_01-1.html" class="btn btn-mid l-gray">수정</a> -->
+						</span>
+					</div>
+
+				</div>
+				<!-- // 컨텐츠 영역 -->
+			
+
+		</div>
+	</section>
+	<!-- // sub Container -->
+</div>
+
+
+<script>
+	
+
+
+	$(function(){
+
+		$(".system-btn").each(function(idx){
+			
+			const $this = $(this);
+			$this.hover(
+				function(){
+					$this.next().animate({opacity: '1'}, 300);
+				},
+				function(){
+					$this.next().animate({opacity: '0'}, 50);
+				}
+			);
+		});
+
+		$(window).on('load resize', function() {
+			var windowWidth = $(window).width();
+			
+			$('.swap-img').each(function() {
+					if (windowWidth < 768) {
+							$(this).attr('src', $(this).data('mobile'));
+					} else {
+							$(this).attr('src', $(this).data('desktop'));
+					}
+				});
+			});
+
+			/* data-target 값과 table 의 id 값을 연결하여 show hide 제어 */
+			$('.chkStyle [type=checkbox]').click(function() {
+        // 클릭된 체크박스의 data-target 값(대상 ID)을 가져옴
+        var targetId = $(this).data('target');
+        var $targetElement = $('#' + targetId);
+        
+        // 체크박스 상태에 따라 요소 보이기/숨기기
+        if ($(this).is(':checked')) {
+            $targetElement.show();
+        } else {
+            $targetElement.hide();
+        }
+    });
+			
+
+	});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+  <!--[if IE 8 ]> <html class="no-js lt-ie9 ie8" lang="ko-KR">
+    <![endif]--><!--[if IE 9 ]> <html class="no-js lt-ie10 ie9" lang="ko-KR">
+    <![endif]--><!--[if (gte IE 10)|!(IE)]><!-->
+  <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>두원공과대학교 스마트교육행정시스템</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,800,900,500">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/board.css?v=1">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2">
+
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<link rel="stylesheet" href="/css/jquery-ui.css">
+<link rel="stylesheet" href="/css/jquery-ui-timepicker-addon.css">
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<script type="text/javascript" src="/lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-sliderAccess.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="/lib/jquery.play.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/js/jquery.ncs.js"></script>
+<script type="text/javascript" src="/lib/jquery.form.js"></script>
+<script type="text/javascript" src="/lib/placeholders.min.js"></script>
+
+<link rel="stylesheet" href="/css-new/responsive.css?v=1">
+<script type="text/javascript" src="/js/jquery.ncs.new.js?v=1"></script>
+<script src="https://kit.fontawesome.com/6026cbbd9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="wrap-new">
+	<!-- Header -->
+
+  <!-- 조교 -->
+	<header id="header-new">
+		<div class="login-new">
+			<div class="wrap-admin">
+				<i class="icon admin"></i><span><a href="#">시스템관리자님</a> 환영합니다.</span>
+			</div>
+			<div class="btn-area">
+				<a href="#" class="button system-btn"><span>로그아웃</span></a>
+			</div>
+		</div>
+
+		<div class="header-new">
+			
+			<div class="col-left">
+				<h1>
+					<a href="../login.html">
+						<picture>
+							<source media="(max-width: 1024px)" srcset="../img/logo_doowon-wh.svg">
+							<source media="(min-width: 1025px)" srcset="../img/logo_doowon-ori.svg">
+							<img src="../img/logo_doowon-ori.svg" alt="두원공과대학교 스마트교육행정시스템">
+						</picture>
+					</a>
+				</h1>
+			</div>
+			<div class="col-right">
+				
+
+				<!-- Nav -->
+				<nav id="nav-new">
+					<div class="mobile-menu xs-show"><a href="#none"><i class="icon mb-menu"></i></a>
+						<span>강의평가</span>
+					</div>
+					<ul class="nav-new">
+						<li class="">
+							<a href="#">대시보드</a>
+						</li>
+						<li class="">
+							<a href="#">수강신청 관리</a>
+						</li>
+						<li class="active">
+							<a href="#">강의평가 관리</a>
+						</li>
+						<li class="">
+							<a href="#">휴복학 신청 관리</a>
+						</li>
+						<li class="">
+							<a href="#">공지사항</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- //Nav -->
+			</div>
+		</div>
+	</header>
+	<!-- //조교 -->
+	<!-- //Header -->
+
+
+	<!-- Container --> 
+	<section class="sub-container" >
+
+		<div class="mobile-lnb xs-show">
+			<select id="lnbOperationSelect" class="" onchange="goLnb(this, '', '');">
+				<option selected="" value="">강의 현황</option>
+				<option value="">서브메뉴 2</option>
+				<option value="">서브메뉴 3</option>
+			</select>
+		</div>
+
+		<!-- 사이드메뉴시작 -->
+		<div class="col-lnb">
+
+			<div class="lnb-title">
+				<p>강의평가</p>
+			</div>
+
+			<!-- 진짜메뉴시작 -->
+      <div class="lnb lnb2 xs-hidden">
+				
+				<div class="lnb-menu active ">
+					<a href="#">
+						<p class=" active">강의 현황</p>
+					</a>
+				</div>
+        
+				<div class="lnb-menu ">
+					<a href="#">
+						<p class="">서브메뉴 2</p>
+					</a>
+				</div>
+              
+				<div class="lnb-menu ">  
+					<a href="#">
+						<p class="">서브메뉴 3</p>
+					</a>
+				</div>
+		</div>
+		<!-- 진짜메뉴끝 -->
+
+	</div>
+	<!-- 사이드메뉴끝 -->
+
+
+
+    <!-- 조교 -->
+		<div class="col-contents reduce-contents">
+			<div class="subCon">
+				<!-- 컨텐츠 영역 -->
+          <h3>평가 미참여자<span class="hidden"> 조교용</span></h3>
+					
+					<div class="tabBox">
+						<h4><span class="material-symbols-outlined">topic</span> 교과목 개요</h4>
+ 						<div class="wrap-table table-responsive">
+							
+							<ul class="table_row-unW">
+								<li class="wd-full -dt">
+									<p class="row-title">교과목명</p>
+									<div class="row-input unwrite">
+										간호과정과비판적사고
+									</div>
+								</li>
+							</ul>
+
+							<ul class="table_row-unW">
+								<li class="wd-half -dt">
+									<p class="row-title">NCS구분</p>
+									<div class="row-input unwrite">
+										역량
+									</div>
+								</li>
+								<li class="wd-half -dt">
+									<p class="row-title">이수구분</p>
+									<div class="row-input unwrite">
+										전공선택
+									</div>
+								</li>
+							</ul>
+
+							<ul class="table_row-unW">
+								<li class="wd-half -dt">
+									<p class="row-title">학년/학기(분반)</p>
+									<div class="row-input unwrite">
+										2/10(A)
+									</div>
+								</li>
+								<li class="wd-half -dt">
+									<p class="row-title">담당교수</p>
+									<div class="row-input unwrite">
+										오재철
+									</div>
+								</li>
+							</ul>
+
+							<ul class="table_row-unW">
+								<li class="wd-half -dt">
+									<p class="row-title">학점</p>
+									<div class="row-input unwrite">
+										3
+									</div>
+								</li>
+								<li class="wd-half -dt">
+									<p class="row-title">이수시간(실습)</p>
+									<div class="row-input unwrite">
+										3(1)
+									</div>
+								</li>
+							</ul>
+
+						</div>				
+					</div>
+
+
+					<div class="tabBox">
+						<h4><span class="material-symbols-outlined">alarm_on</span>학생 미참여 알림 발송</h4>
+
+						<div class="wrap-table table-responsive">
+							<table class="headTbl tdLine bdl bdr">
+								<colgroup>
+									<col style="width:4%">
+									<col style="width:5%">
+									<col style="width:5%">
+									<col style="width:6%">
+									<col style="width:13%;">
+									<col style="width:17%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>
+											<label class="checkbox">
+												<input type="checkbox" id="allChk" name="allChk">
+												<span class="checkbox_icon"></span>
+												<span class="checkbox_text"></span>
+												<span class="hidden">전체 체크하기</span>
+											</label>
+										</th>
+										<th>NO.</th>
+										<th>학번</th>
+										<th>이름</th>
+										<th>참여 여부</th>
+										<th>비교</th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td>
+											<label class="checkbox">
+												<input type="checkbox" id="chk1" name="chk">
+												<span class="checkbox_icon"></span>
+												<span class="checkbox_text"></span>
+												<span class="hidden">해당 리스트 체크하기</span>
+											</label>
+										</td>
+										<td>1</td>
+										<td>********</td>
+										<td>***</td>
+										<td><span class="red">X</span></td>
+										<td>알림 발송 완료(2026-07-24 오전11:30)</td>
+									</tr>
+
+									<tr>
+										<td>
+											<label class="checkbox">
+												<input type="checkbox" id="chk2" name="chk">
+												<span class="checkbox_icon"></span>
+												<span class="checkbox_text"></span>
+												<span class="hidden">해당 리스트 체크하기</span>
+											</label>
+										</td>
+										<td>2</td>
+										<td>********</td>
+										<td>***</td>
+										<td><span class="red">X</span></td>
+										<td>알림 발송 완료(2026-07-24 오전11:31)</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<td>계</td>
+									<td colspan="5">참여율(참여자 수 / 미참여자 수): 80% (8명 / 2명)</td>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+
+					
+          <div class="wrap-btn -multi -dt">
+						<span>
+              <a href="sub2_05-1.html" class="btn btn-mid l-gray">목록</a>
+							<a href="#open-modal-big" class="btn btn-mid d-gray">선택자에게 알림 보내기</a>
+							<!-- <a href="sub2_02-1.html" class="btn btn-mid l-blue">미참여자 확인</a> -->
+            </span>
+						<span>
+							<!-- <a href="#none" class="btn btn-mid excel">목록정보(엑셀) 다운로드</a> -->
+							<!-- <a href="sub2_00-2.html" class="btn btn-mid d-gray">기본정보 등록</a> -->
+							<!-- <a href="sub4_01-1.html" class="btn btn-mid l-gray">수정</a> -->
+						</span>
+					</div>
+	
+					
+					
+
+				</div>
+				<!-- // 컨텐츠 영역 subCon -->
+
+				<!-- 선택자에게 알림 보내기 팝업 -->
+        <div id="open-modal-big" class="modal-window -wide modal">
+          <div>
+            <a href="#none" title="Close" class="modal-close"></a>
+            <div class="tit"><p>알림 발송</p></div>
+            <div class="modal-msg">
+              <form name="frmSubject" onsubmit="return false;">
+                <input type="hidden" name="em_seq" value="288">
+                <input type="hidden" id="page" name="page" value="1">
+                <br><br>
+
+                <div class="box">
+                  <table class="bodyTbl">
+                    <colgroup>
+                      <col width="18%">
+                      <col width="32%">
+                      <col width="18%">
+                      <col width="32%">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th class="bdb">강좌명</th>
+                        <td>간호과정과비판적사고</td>
+                        <th class="bdb">강좌번호</th>
+                        <td>76</td>
+                      </tr>
+                      <tr>
+                        <th>선택 미참여 학생</th>
+                        <td>2명</td>
+                        <th>알림 구분</th>
+                        <td>앱 알림</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </form>
+
+              <div class="box2 bdb">
+                <h5 class="bdt">알림 내용</h5>
+                <div class="note">
+                  <p>
+                     안녕하세요. 간호과정과비판적사고 수강생 여러분<br>2026학년도 1학기 강의평가가 진행 중입니다. 여러분의 소중한 의견은 더 나은 수업을 만드는 데 큰 힘이 됩니다.
+                  </p>
+                  <ul>
+                    <li><strong>• 기간:</strong> ~ 00/00(금) 23:59까지</li>
+                    <li><strong>• 방법:</strong> [두원공과대학교 스마트교육행정시스템]</li>
+                    <li><strong>• 특징:</strong> 강의평가는 <strong>100% 익명</strong>으로 처리되며, 성적 열람 시 필수 사항입니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="wrap_madal-btn">
+              <a href="#none" title="confirm" class="button grey size-mid">보내기</a>
+              <!-- <a href="#" title="Close" class="button gray-line size-mid">취소</a> -->
+            </div>
+          </div>
+        </div>
+        <!-- // 선택자에게 알림 보내기 팝업 -->
+			
+
+		</div>
+	</section>
+	<!-- // sub Container -->
+</div>
+
+
+<script>
+	
+
+
+	$(function(){
+
+		$(".system-btn").each(function(idx){
+			
+			const $this = $(this);
+			$this.hover(
+				function(){
+					$this.next().animate({opacity: '1'}, 300);
+				},
+				function(){
+					$this.next().animate({opacity: '0'}, 50);
+				}
+			);
+		});
+
+		$(window).on('load resize', function() {
+			var windowWidth = $(window).width();
+			
+			$('.swap-img').each(function() {
+					if (windowWidth < 768) {
+							$(this).attr('src', $(this).data('mobile'));
+					} else {
+							$(this).attr('src', $(this).data('desktop'));
+					}
+				});
+			});
+
+		/* data-target 값과 table 의 id 값을 연결하여 show hide 제어 */
+			$('.chkStyle [type=checkbox]').click(function() {
+        // 클릭된 체크박스의 data-target 값(대상 ID)을 가져옴
+        var targetId = $(this).data('target');
+        var $targetElement = $('#' + targetId);
+        
+        // 체크박스 상태에 따라 요소 보이기/숨기기
+        if ($(this).is(':checked')) {
+            $targetElement.show();
+        } else {
+            $targetElement.hide();
+        }
+    	});
+
+
+			/* 게시판 전체 체크 기능 */
+			$("#allChk").click(function() {
+        if($("#allChk").is(":checked")) $("input[name=chk]").prop("checked", true);
+        else $("input[name=chk]").prop("checked", false);
+      });
+
+      $("input[name=chk]").click(function() {
+        var total = $("input[name=chk]").length;
+        var checked = $("input[name=chk]:checked").length;
+
+        if(total != checked) $("#allChk").prop("checked", false);
+        else $("#allChk").prop("checked", true); 
+      });
+			
+
+	});
+
+</script>
+</body>
+</html>

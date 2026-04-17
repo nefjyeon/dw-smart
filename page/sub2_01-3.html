@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+  <!--[if IE 8 ]> <html class="no-js lt-ie9 ie8" lang="ko-KR">
+    <![endif]--><!--[if IE 9 ]> <html class="no-js lt-ie10 ie9" lang="ko-KR">
+    <![endif]--><!--[if (gte IE 10)|!(IE)]><!-->
+  <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>두원공과대학교 스마트교육행정시스템</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,800,900,500">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/board.css?v=1">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2">
+
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<link rel="stylesheet" href="/css/jquery-ui.css">
+<link rel="stylesheet" href="/css/jquery-ui-timepicker-addon.css">
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<script type="text/javascript" src="/lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-sliderAccess.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="/lib/jquery.play.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/js/jquery.ncs.js"></script>
+<script type="text/javascript" src="/lib/jquery.form.js"></script>
+<script type="text/javascript" src="/lib/placeholders.min.js"></script>
+
+<link rel="stylesheet" href="/css-new/responsive.css?v=1">
+<script type="text/javascript" src="/js/jquery.ncs.new.js?v=1"></script>
+<script src="https://kit.fontawesome.com/6026cbbd9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="wrap-new">
+	<!-- Header -->
+
+  <!-- 관리자, 교직원 -->
+	<header id="header-new">
+		<div class="login-new">
+			<div class="wrap-admin">
+				<i class="icon admin"></i><span><a href="#">시스템관리자님</a> 환영합니다.</span>
+			</div>
+			<div class="btn-area">
+				<a href="#" class="button system-btn"><span>로그아웃</span></a>
+			</div>
+		</div>
+
+		<div class="header-new">
+			
+			<div class="col-left">
+				<h1>
+					<a href="../login.html">
+						<picture>
+							<source media="(max-width: 1024px)" srcset="../img/logo_doowon-wh.svg">
+							<source media="(min-width: 1025px)" srcset="../img/logo_doowon-ori.svg">
+							<img src="../img/logo_doowon-ori.svg" alt="두원공과대학교 스마트교육행정시스템">
+						</picture>
+					</a>
+				</h1>
+			</div>
+			<div class="col-right">
+				
+				<!-- Nav -->
+				<nav id="nav-new">
+					<div class="mobile-menu xs-show"><a href="#none"><i class="icon mb-menu"></i></a>
+						<span>강의평가</span>
+					</div>
+					<ul class="nav-new">
+						<li class="">
+							<a href="#">대시보드</a>
+						</li>
+						<li class="">
+							<a href="#">수강신청 관리</a>
+						</li>
+						<li class="active">
+							<a href="#">강의평가 관리</a>
+						</li>
+						<li class="">
+							<a href="#">휴복학 관리</a>
+						</li>
+						<li class="">
+							<a href="#">시스템 관리</a> 
+						</li>
+						<li class="">
+							<a href="#">공지사항</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- //Nav -->
+			</div>
+		</div>
+	</header>
+	<!-- //관리자, 교직원 -->
+	<!-- //Header -->
+
+
+	<!-- Container --> 
+	<section class="sub-container" >
+
+		<div class="mobile-lnb xs-show">
+			<select id="lnbOperationSelect" class="" onchange="goLnb(this, '', '');">
+				<option selected="" value="">강의 현황</option>
+				<option value="">서브메뉴 2</option>
+				<option value="">서브메뉴 3</option>
+			</select>
+		</div>
+
+		<!-- 사이드메뉴시작 -->
+		<div class="col-lnb">
+
+			<div class="lnb-title">
+				<p>강의평가</p>
+			</div>
+
+			<!-- 진짜메뉴시작 -->
+      <div class="lnb lnb2 xs-hidden">
+				
+				<div class="lnb-menu active ">
+					<a href="#">
+						<p class=" active">강의 현황</p>
+					</a>
+				</div>
+        
+				<div class="lnb-menu ">
+					<a href="#">
+						<p class="">서브메뉴 2</p>
+					</a>
+				</div>
+              
+				<div class="lnb-menu ">  
+					<a href="#">
+						<p class="">서브메뉴 3</p>
+					</a>
+				</div>
+
+		</div>
+		<!-- 진짜메뉴끝 -->
+
+	</div>
+	<!-- 사이드메뉴끝 -->
+
+
+
+    <!-- 관리자 -->
+		<div class="col-contents tableForm-contents">
+			<div class="subCon">
+				<!-- 컨텐츠 영역 -->
+          <h3>강의평가 결과</h3>
+	
+					<div class="tabBox">
+						<h4><span class="material-symbols-outlined">topic</span> 교과목 개요</h4>
+					
+						<div class="wrap-table table-responsive">
+
+							<ul class="table_row-unW">
+								<li class="wd-full -dt">
+									<p class="row-title">교과목명</p>
+									<div class="row-input unwrite">
+										간호과정과비판적사고
+									</div>
+								</li>
+							</ul>
+
+							<ul class="table_row-unW">
+								<li class="wd-half -dt">
+									<p class="row-title">NCS구분</p>
+									<div class="row-input unwrite">
+										역량
+									</div>
+								</li>
+								<li class="wd-half -dt">
+									<p class="row-title">이수구분</p>
+									<div class="row-input unwrite">
+										전공선택
+									</div>
+								</li>
+							</ul>
+
+							<ul class="table_row-unW">
+								<li class="wd-half -dt">
+									<p class="row-title">학년/학기(분반)</p>
+									<div class="row-input unwrite">
+										2/10(A)
+									</div>
+								</li>
+								<li class="wd-half -dt">
+									<p class="row-title">담당교수</p>
+									<div class="row-input unwrite">
+										오재철
+									</div>
+								</li>
+							</ul>
+
+							<ul class="table_row-unW">
+								<li class="wd-half -dt">
+									<p class="row-title">학점</p>
+									<div class="row-input unwrite">
+										3
+									</div>
+								</li>
+								<li class="wd-half -dt">
+									<p class="row-title">이수시간(실습)</p>
+									<div class="row-input unwrite">
+										3(1)
+									</div>
+								</li>
+							</ul>
+
+						</div>				
+					</div>
+
+
+					<div class="tabBox">
+						<h4><span class="material-symbols-outlined">rate_review</span>지난 학기 수업 평가 점수 비교(최근 3회)</h4>
+
+						<div class="wrap-table table-responsive">
+
+							<table class="headTbl tdLine bdl bdr" >
+								<colgroup>
+									<col style="width:20%;">
+									<col style="width:20%;">
+									<col style="width:20%;">
+									<col style="width:20%;">
+									<col style="width:20%;">
+								</colgroup>
+
+								<thead>
+									<tr>
+										<th class="bdb">구분</th>
+										<th>전 직전학기<br>(/)</th>
+										<th>직전학기<br>(/)</th>
+										<th>이번학기<br>(/)</th>
+										<th>평균</th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<th class="bdb-d">결과</th>
+										<td>0</td>
+										<td>0</td>
+										<td>4.56</td>
+										<td>4.56</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+							
+						<ul class="notice">
+							<li class="red">
+								<i>※</i><span>&nbsp;강좌별 수업평가 평균 점수는 학생의 자가평가 문항 응답을 제외하고 산출합니다.</span>
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="tabBox">
+						<h4><span class="material-symbols-outlined">rate_review</span>평가영역별 점수</h4>
+
+						<div class="wrap-table table-responsive">
+
+							<table class="headTbl tdLine bdl bdr" >
+								<colgroup>
+									<col style="width:14.285%;">
+									<col style="width:14.285%;">
+									<col style="width:14.285%;">
+									<col style="width:14.285%;">
+									<col style="width:14.285%;">
+									<col style="width:14.285%;">
+									<col style="width:14.285%;">
+								</colgroup>
+
+								<thead>
+									<tr>
+										<th class="bdb">구분</th>
+										<th>학습자 자가진단</th>
+										<th>수업운영</th>
+										<th>교수학습활동</th>
+										<th>학습성과</th>
+										<th>온라인</th>
+										<th>만족도</th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<th class="bdb-d">결과</th>
+										<td>0.0</td>
+										<td>4.1</td>
+										<td>4.55</td>
+										<td>5.3</td>
+										<td>0.0</td>
+										<td>0.0</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+
+					<div class="tabBox">
+            <h4><span class="material-symbols-outlined">rate_review</span>문항별 점수</h4>
+ 						<div class="wrap-table table-responsive">
+							<table class="headTbl tdLine bdl bdr">
+								<colgroup>
+									<col style="width:4%">
+									<col style="width:7%">
+									<col style="width:auto">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th rowspan="2">문항<br>번호</th>
+										<th rowspan="2">평가영역</th>
+										<th rowspan="2">문항</th>
+										<th rowspan="2">매우 그렇다</th>
+										<th rowspan="2">그렇다</th>
+										<th rowspan="2">보통이다</th>
+										<th rowspan="2">그렇지 않다</th>
+										<th rowspan="2">매우<br>그렇지 않다</th>
+										<th rowspan="2">점수</th>
+										<th colspan="3" class="bdb">비교</th>
+									</tr>
+									<tr>
+										<th>학과</th>
+										<th>학부</th>
+										<th>대학</th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>학습성과</td>
+										<td class="left">교수님의 강의가 나의 전공(교양)역량을 향상시키는데 도움이 되었다.</td>
+										<td>65.22%</td>
+										<td>21.74%</td>
+										<td>13.04%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>13.56</td>
+										<td>13.76</td>
+										<td>13.76</td>
+										<td>13.74</td>
+									</tr>
+
+									<tr>
+										<td>2</td>
+										<td>수업운영</td>
+										<td class="left">강의계획서에는 교육목표, 수업내용, 수업방법, 평가방법에 대해 명확히 제시되었다.</td>
+										<td>65.22%</td>
+										<td>21.74%</td>
+										<td>13.04%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>13.56</td>
+										<td>13.76</td>
+										<td>13.76</td>
+										<td>13.74</td>
+									</tr>
+
+									<tr>
+										<td>3</td>
+										<td>수업운영</td>
+										<td class="left">교수님은 강의계획서(학습목표, 주별 수업내용 등)대로 수업을 진행하셨다.</td>
+										<td>65.22%</td>
+										<td>21.74%</td>
+										<td>13.04%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>13.56</td>
+										<td>13.76</td>
+										<td>13.76</td>
+										<td>13.74</td>
+									</tr>
+
+									<tr>
+										<td>4</td>
+										<td>수업운영</td>
+										<td class="left">수업 내용에 적합한 교수방법(강의, 토론, 조별학습 등)이 활용되었다.</td>
+										<td>65.22%</td>
+										<td>21.74%</td>
+										<td>13.04%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>13.56</td>
+										<td>13.76</td>
+										<td>13.76</td>
+										<td>13.74</td>
+									</tr>
+
+									<tr>
+										<td>5</td>
+										<td>수업운영</td>
+										<td class="left">수업 내용이 학생들의 학습수준과 이해 정도에 맞게 진행되었다.</td>
+										<td>65.22%</td>
+										<td>21.74%</td>
+										<td>13.04%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>13.56</td>
+										<td>13.76</td>
+										<td>13.76</td>
+										<td>13.74</td>
+									</tr>
+
+									<tr>
+										<td>6</td>
+										<td>교수학습활동</td>
+										<td class="left">성적평가(출석, 시험, 과제 등)에 대한 기준과 방법이 합리적이었다.</td>
+										<td>65.22%</td>
+										<td>21.74%</td>
+										<td>13.04%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>13.56</td>
+										<td>13.76</td>
+										<td>13.76</td>
+										<td>13.74</td>
+									</tr>
+
+									<tr>
+										<td>7</td>
+										<td>수업운영</td>
+										<td class="left">수업시간이 잘 지켜졌다.(수업시작 시작과 종료, 휴강에 따른 보강)</td>
+										<td>65.22%</td>
+										<td>21.74%</td>
+										<td>13.04%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>13.56</td>
+										<td>13.76</td>
+										<td>13.76</td>
+										<td>13.74</td>
+									</tr>
+
+									<tr>
+										<td>8</td>
+										<td>교수학습활동</td>
+										<td class="left">교수님은 학생들의 수업태도 및 수업성실성에 대한 지도를 철저하게 하셨다.</td>
+										<td>65.22%</td>
+										<td>21.74%</td>
+										<td>13.04%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>13.56</td>
+										<td>13.76</td>
+										<td>13.76</td>
+										<td>13.74</td>
+									</tr>
+
+									<tr>
+										<td>9</td>
+										<td>학습성과</td>
+										<td class="left">과제물이나 시험에 대해 적절한 피드백을 하여 학습에 도움이 되었다.</td>
+										<td>65.22%</td>
+										<td>21.74%</td>
+										<td>13.04%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>13.56</td>
+										<td>13.76</td>
+										<td>13.76</td>
+										<td>13.74</td>
+									</tr>
+
+									<tr>
+										<td>10</td>
+										<td>학습성과</td>
+										<td class="left">이 수업에 대하여 전반적으로 만족한다.</td>
+										<td>65.22%</td>
+										<td>21.74%</td>
+										<td>13.04%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>13.56</td>
+										<td>13.76</td>
+										<td>13.76</td>
+										<td>13.74</td>
+									</tr>
+
+								</tbody>
+
+								<tfoot>
+									<td colspan="3">평균</td>
+									<td>68.7%</td>
+									<td>18.26%</td>
+									<td>13.04%</td>
+									<td>0%</td>
+									<td>0%</td>
+									<td>4.56</td>
+									<td>4.6</td>
+									<td>4.6</td>
+									<td>4.6</td>
+								</tfoot>
+							</table>
+
+						</div>
+					</div>
+
+					<div class="tabBox">
+						<h4><span class="material-symbols-outlined">rate_review</span>주관식 응답</h4>
+
+						<form action="">
+							<div class="sum-field -chk">
+								<div class="chk-round">
+									<input type="checkbox" id="wordFilter" class="screen-reader">
+									<div class="label-box">
+										<span class="check-icon" aria-hidden="true"></span>
+										<label for="wordFilter">주관식 검열 단어 표기</label>
+									</div>
+								</div>
+							</div>
+						
+							<div class="wrap-table table-responsive">
+
+								<table class="headTbl tdLine bdl bdr" >
+									<colgroup>
+										<col style="width:20%;">
+										<col style="width:auto;">
+									</colgroup>
+
+									<thead>
+										<tr>
+											<th>응답수</th>
+											<th><span class="">이 수업에서 좋았던 점이나 개선할 점이 있다면 자유롭게 적어 주시기 바랍니다.(200자 이내)</span></th>
+										</tr>
+									</thead>
+									
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td class="left">5혼의 소리를 직접 들으며 같이 연주한 게 너무 좋았습니다</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td class="left">.</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td class="left">5혼에 대해 배울 수 있는 좋은 수업</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td class="left">최고의 수업</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td class="left">좋은 수업이었습니다. 덕분에 혼 편곡을 할 수 있게 되었습니다!</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</form>
+					</div>
+
+
+					<div class="tabBox">
+            <h4><span class="material-symbols-outlined">rate_review</span>학생 자가 평가용 문항</h4>
+ 						<div class="wrap-table table-responsive">
+							<table class="headTbl tdLine bdl bdr">
+								<colgroup>
+									<col style="width:4%">
+									<col style="width:7%">
+									<col style="width:auto">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+									<col style="width:6%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th rowspan="2">문항<br>번호</th>
+										<th rowspan="2">평가영역</th>
+										<th rowspan="2">문항</th>
+										<th rowspan="2">매우 그렇다</th>
+										<th rowspan="2">그렇다</th>
+										<th rowspan="2">보통이다</th>
+										<th rowspan="2">그렇지 않다</th>
+										<th rowspan="2">매우<br>그렇지 않다</th>
+										<th rowspan="2">점수</th>
+										<th colspan="3" class="bdb">비교</th>
+									</tr>
+									<tr>
+										<th>학과</th>
+										<th>학부</th>
+										<th>대학</th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>학습자 자가진단</td>
+										<td class="left">나는 수업에 성실하게 출석하였다.</td>
+										<td>52.17%</td>
+										<td>30.43%</td>
+										<td>17.93%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>4.35</td>
+										<td>4.58</td>
+										<td>4.58</td>
+										<td>4.57</td>
+									</tr>
+
+									<tr>
+										<td>2</td>
+										<td>학습자 자가진단</td>
+										<td class="left">나는 복습, 질문과 발표, 과제 등 수업활동에 성실하게 참여하였다.</td>
+										<td>60.87%</td>
+										<td>21.74%</td>
+										<td>17.39%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>4.43</td>
+										<td>4.51</td>
+										<td>4.51</td>
+										<td>4.55</td>
+									</tr>
+
+									<tr>
+										<td>3</td>
+										<td>학습자 자가진단</td>
+										<td class="left">나는 수업 중 다른 학생들과의 협력에 적극적으로 임하였다.</td>
+										<td>60.87%</td>
+										<td>21.74%</td>
+										<td>17.39%</td>
+										<td>0%</td>
+										<td>0%</td>
+										<td>4.43</td>
+										<td>4.54</td>
+										<td>4.54</td>
+										<td>4.59</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+
+
+					<div class="tabBox">
+						<h4><span class="material-symbols-outlined">rate_review</span>학생 참여 현황</h4>
+
+						<div class="wrap-table table-responsive">
+
+							<table class="headTbl tdLine bdl bdr" >
+								<colgroup>
+									<col style="width:8%;">
+									<col style="width:23%;">
+									<col style="width:23%;">
+									<col style="width:23%;">
+									<col style="width:23%;">
+								</colgroup>
+
+								<thead>
+									<tr>
+										<th>NO.</th>
+										<th>학번</th>
+										<th>이름</th>
+										<th>참여여부</th>
+										<th>점수</th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>202410111</td>
+										<td>김학생</td>
+										<td>O</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>202410131</td>
+										<td>이학생</td>
+										<td>O</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>202410411</td>
+										<td>박학생</td>
+										<td>O</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>202410115</td>
+										<td>홍기동</td>
+										<td>O</td>
+										<td>4</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>202410311</td>
+										<td>김xx</td>
+										<td>O</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>202310111</td>
+										<td>박xx</td>
+										<td>O</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>202310151</td>
+										<td>여xx</td>
+										<td>O</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>202410119</td>
+										<td>진xx</td>
+										<td>O</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>202410189</td>
+										<td>김xx</td>
+										<td><span class="red">X</span></td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>202410134</td>
+										<td>우xx</td>
+										<td><span class="red">X</span></td>
+										<td>0</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<td>계</td>
+									<td colspan="4">참여자: 80%(8명)</td>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+					
+					
+          <div class="wrap-btn -multi -dt">
+						<span>
+              <a href="sub2_01-2.html" class="btn btn-mid l-gray">목록</a>
+							<!-- <a href="sub4_01.html" class="btn btn-mid l-blue">미참여자 확인</a> -->
+            </span>
+						<span>
+							<!-- <a href="#none" class="btn btn-mid excel">목록정보(엑셀) 다운로드</a> -->
+							<!-- <a href="sub2_00-2.html" class="btn btn-mid d-gray">기본정보 등록</a> -->
+							<!-- <a href="sub4_01-1.html" class="btn btn-mid l-gray">수정</a> -->
+						</span>
+					</div>
+
+				</div>
+				<!-- // 컨텐츠 영역 -->
+
+		</div>
+	</section>
+	<!-- // sub Container -->
+</div>
+
+
+<script>
+	
+
+
+	$(function(){
+
+		$(".system-btn").each(function(idx){
+			
+			const $this = $(this);
+			$this.hover(
+				function(){
+					$this.next().animate({opacity: '1'}, 300);
+				},
+				function(){
+					$this.next().animate({opacity: '0'}, 50);
+				}
+			);
+		});
+
+		$(window).on('load resize', function() {
+			var windowWidth = $(window).width();
+			
+			$('.swap-img').each(function() {
+					if (windowWidth < 768) {
+							$(this).attr('src', $(this).data('mobile'));
+					} else {
+							$(this).attr('src', $(this).data('desktop'));
+					}
+				});
+			});
+
+			/* data-target 값과 table 의 id 값을 연결하여 show hide 제어 */
+			$('.chkStyle [type=checkbox]').click(function() {
+        // 클릭된 체크박스의 data-target 값(대상 ID)을 가져옴
+        var targetId = $(this).data('target');
+        var $targetElement = $('#' + targetId);
+        
+        // 체크박스 상태에 따라 요소 보이기/숨기기
+        if ($(this).is(':checked')) {
+            $targetElement.show();
+        } else {
+            $targetElement.hide();
+        }
+    });
+			
+
+	});
+
+</script>
+</body>
+</html>

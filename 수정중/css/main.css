@@ -1,0 +1,696 @@
+@import url("common.css");
+
+
+/* 로그인 */
+.login_bg {height:100%; background:#f5f5f5;}
+.login_wrap {min-height:100%; font-family:"NotoKR-Regular", Sans-serif; background:url('../images/main/main_bg.jpg') center 0px no-repeat; background-size: cover;}
+.login_wrap h1 {position:relative; top:0px; width:100%; max-width: 1170px; height:80px; margin:0 auto; text-align: center; /*background:#343c8a url(/images/main/login_logo_bg.png) no-repeat 96% 16px;*/} 
+.login_wrap h1 a {position:absolute; top:0px; left:0; display:block; width:100%;padding:20px 0 32px 0px;  overflow:hidden;}
+
+.login_title {position:relative; top:60px; width:100%; height:340px; margin:0 auto;  padding-bottom: 0px; text-align: center;}
+.login_title h2 {position:relative; top:0; width: 100%;  padding:0px 0 0 0px; font-size:35px; color:#fff;  font-weight: 100; font-family:'NotoKR-Light',sans-serif; line-height:135%; letter-spacing:-1.5pt;}
+.login_title h4 {display: inline-block; position:relative; top:0; width: 100%;  padding:0px 0 5px 0px; font-size:20px; color:#fff; font-weight: 400; font-family:'NotoKR-Light',sans-serif;  line-height:150%; letter-spacing:3pt;}
+.login_title h4 br {display:none;}
+
+span.title_white {line-height:120%; letter-spacing:-1.5pt; color:#fff; font-family:'NotoKR-Regular',sans-serif; font-weight: 400; }
+span.title_pink {line-height:120%; letter-spacing:0pt; color:#ff85ca; font-family:'Montserrat', sans-serif !important;font-weight: 700; }
+span.title_darkpink {line-height:120%; letter-spacing:-2.5pt; color:#fc269f; font-family: 'Montserrat','NotoKR-Medium', sans-serif !important;font-weight: 500;}
+
+
+
+/*====================== 로그인 아이콘 ========================*/
+.login_icon {position: relative;padding:25px 0 12px 0; margin: 0 0 0px 0;}
+.login_icon h2 img {margin-left:10px;}
+.login_icon ul {margin:0px auto 0 auto; width:100%; max-width:600px; overflow:hidden;}
+.login_icon li {float:left; width:33%; margin:0 0.1%; transition:all 0.3s ease;}
+.login_icon li:hover {top:-8px; transition:all 0.3s ease;}
+.login_icon li a {display:block; width:100%; /*height:80px; */padding-top:98px; padding-bottom:20px; -webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
+.login_icon li a img{position:absolute; left:0; top:0; opacity:0; transition:all 0.5s ease;}
+
+
+.login_icon li a p {color:#fff;font-size:18px; line-height:120%; letter-spacing:1pt; font-weight: 400;font-family: 'NotoKR-Medium', sans-serif; text-align: center;}
+.login_icon li a:hover {-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
+
+	.login_icon li.one {background:#1e4faf; opacity: 85%;}
+	.login_icon li.two {background:#00b9e1; opacity: 85%;}
+	.login_icon li.three {background:#1e4faf; opacity: 85%;}
+	
+	.login_icon li.one a {background:url('../images/main/icon_01.png') center 28px no-repeat;}
+	.login_icon li.two a {background:url('../images/main/icon_02.png') center 28px no-repeat;}
+	.login_icon li.three a {background:url('../images/main/icon_03.png') center 28px no-repeat;}
+
+	.login_icon li.one a:hover {background:rgba(50,106,215, 0.5) url('../images/main/icon_01.png') center 23px no-repeat;}
+	.login_icon li.two a:hover {background:rgba(41,212,249, 0.5) url('../images/main/icon_02.png') center 23px no-repeat;}
+	.login_icon li.three a:hover {background:rgba(50,106,215, 0.5) url('../images/main/icon_03.png') center 23px no-repeat;}
+
+.login_icon li.two a p {color:#fff;}
+
+.login_icon li a:hover{/*opacity: 85%;*/}
+.login_icon li a:hover p {color:#fff;}
+
+/*====================== //로그인 아이콘 ========================*/
+
+
+
+
+.login_box {position:relative; top:0px; width:1000px;height:360px; margin:0 auto;background:#fff url(../images/main/login_d_bg.png) center 47px no-repeat; }
+
+.login_box .login_con {float:left; position:relative; margin:0 auto;  display:none; max-width:380px; padding:55px 0 40px 5%;}
+.login_box .login_con.on {display:block;}
+
+.login_box .login_con .login_txt {position:relative; top:0px; width:380px; text-align: center;padding: 0px 0px 0px 0px;}
+.login_box .login_con h3 {font-size:45px; color: #0f3e9c;font-family: 'Raleway', sans-serif; font-weight:900; letter-spacing:-0.5pt; } 
+.login_box .login_con .login_txt p {color: #666; line-height: 130%; font-size: 16px; letter-spacing:-0.5pt; }
+
+.login_form .login-main { text-align: center; min-height: 20px; padding:10px 0px 0 0 ;font-size: 15px; color: #888;font-family:"NotoKR-Regular", Sans-serif; line-height: 120%; letter-spacing: -0.4pt;  }
+.login_form .login-main a {font-family: 'NotoKR-Medium', sans-serif;color: #0f3e9c;}	
+.login_form .login-main a:hover {font-family: 'NotoKR-Medium', sans-serif; color: #0545c7;}	
+
+
+.login_form .login_find {position:relative; width:100%;padding-top:0px; margin-top: 5px;  z-index: 99999;}
+.login_form .login_find a{float: left; text-align: center; width: 185px;  height: 46px; line-height: 46px; margin-right:10px;font-family:"NotoKR-Regular", Sans-serif; font-size:16px; color:#fff; -webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s; }
+.login_form .login_find a:last-child {margin-right: 0px;  -webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s; }
+
+.login_form .login_find a i {display:inline-block; vertical-align:middle; line-height:25px; width: 30px; height: 25px; position:Relative; background:url('../images/main/login_arrow.png')  no-repeat center top 0px;transition: all 0.3s;}
+
+.login_box .login_con .login_form a.btn_login {background: #0f3e9c !important; -webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
+.login_box .login_con .login_form a.btn_login:hover {background: #1954c5 !important;}
+.login_box .login_con .login_form a.btn_find {background: #666 !important; -webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
+.login_box .login_con .login_form a.btn_find:hover { background: #888 !important;}
+
+
+
+
+/*=========================== 메뉴얼 다운로드 ====================*/
+
+.login_box .login_con .login_down {position:relative; width:100%;padding-top:0px;text-align: center;}
+
+.login_box .login_con a.btn_down {
+    display:inline-block;
+    margin-top: 20px;	
+	width: 100%;
+    height: 67px;
+    line-height: 67px;
+	letter-spacing: -0.2pt;
+    text-align: center; font-family:"NotoKR-Bold", Sans-serif; font-size:16px; color:#0f3e9c; border:2px solid #0f3e9c; background: #fff; box-sizing: border-box;
+	-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;
+}
+
+.login_box .login_con a.btn_down i {display:inline-block; vertical-align:middle; line-height:18px; width: 40px; height: 18px; position:Relative; background:url('../images/main/down_icon.png')  no-repeat center right 10px;transition: all 0.3s;}
+
+.login_box .login_con a.btn_down:hover {background: #0f3e9c; color:#fff; font-family:"NotoKR-Medium", Sans-serif; filter:alpha(opacity=95); opacity:.95; -webkit-opacity:.95;}
+
+.login_box .login_con a.btn_down:hover i {background:url('../images/main/down_icon_on.png')  no-repeat center right 0px;transition: all 0.3s;  opacity:.95; -webkit-opacity:.95;}
+
+/*=========================== //메뉴얼 다운로드 ====================*/
+
+
+
+
+
+
+.btn_Gpin {background:#266ed4;}
+.btn_Gpin a {display:block; line-height:40px; text-align:center; font-size:18px; color:#fff; }
+
+.btn_ipin {width:300px; margin:0 auto; background:url('/images/main/ico_ipin.png') no-repeat left center #394b61; border-radius:5px;} /* 190107 */
+.btn_ipin a {display:block; padding-left:49px; line-height:49px; text-align:center; font-size:16px; color:#fff; }/* 190107 */
+
+/* =================  게시판 =================*/
+.latestWrap  {width: 100%; padding:40px 5% 40px 0;border-bottom: 0px solid #ccc;}
+.latestWrap_in {position:relative; margin:0 auto; width: 470px; height:600px; word-break:keep-all;overflow:hidden;/* border-top:1px solid #ddd; border-left:1px solid #ddd;*/}		
+.tab.list {min-height:120px; /*padding:1.5% 2%;*/ width:100%; /*border-right:1px solid #ddd; border-bottom:1px solid #ddd;*/ box-sizing:border-box;}
+.tab.list2 {min-height:150px; /*padding:1.5% 2%;*/ width:100%; /*border-right:1px solid #ddd; border-bottom:1px solid #ddd;*/ box-sizing:border-box;}
+.tab.list:last-child {border-top:1px dashed #ddd; padding-top: 70px; box-sizing:border-box;}
+.tab.list ul {position:relative; margin:0; padding:0; list-style:none; *zoom:1;}
+.tab.list ul:after {content:""; display:block; clear:both;}
+.tab.list li {float:left; margin-bottom:-1px;}
+.tab.list li a {position:relative; float:left; text-decoration:none; color:#0f3e9c; font-size:22px;font-family:"NotoKR-Regular", Sans-serif;}
+.tab.list li a span {display:inline-block; padding:0px 25px 0px 0; cursor:pointer;}
+
+.tab.list li ul {width:100%; position:absolute; top:45px; left:0; list-style:none; border:0; margin:0; padding:0; *zoom:1;}
+.tab.list li ul:after {content:""; display:block; clear:both;}
+.tab.list li li {float:none; position:relative; height:30px; line-height:30px; color:#999;}
+.tab.list li li a {float:none; padding:0; margin:0; border:0 !important; color:#555 !important; font-family:"NotoKR-Regular", Sans-serif; background:transparent; letter-spacing:-0.5pt; font-size:15px; display:block;}
+.tab.list li li a:hover,
+.tab.list li li a:active,
+.tab.list li li a:focus {color:#000 !important; text-decoration:underline;}
+
+
+
+.tab.list li.active { display: table-cell; vertical-align: top; }
+.tab.list li.active a {background:transparent; color:#1e4faf;
+	/*...처리 */display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.subject {display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 85%;}
+
+.tab.list li.active a span {font-family:'NotoKR-Bold',sans-serif;letter-spacing: -1pt; line-height:120%;/* padding-left: 26px;  background: url(../images/main/notice_icon.png) left 22px no-repeat; */}
+.tab.list li.active li a span {font-family:"NotoKR-Regular", Sans-serif; display:inline-block; position:absolute; right:5px; top:0; padding:0; text-align: right;color: #a4a4a4;font-size: 15px;letter-spacing: -0.5pt;}
+
+.tab.list li.active li a span.date {display:block;}	
+.btn-bbsmore {display:none; position:absolute; right:10px; top:0px; margin:0; padding:0;}
+.tab.list li.active .btn-bbsmore {display:block;}
+
+
+
+
+/*====================== 배너 ========================*/
+
+.banner {clear:both;position: relative; top:0px;width:1000px; height: auto; margin:0 auto; background: #e2e3ec; padding:20px 0 0 0;}
+
+.banner ul {overflow:hidden; clear:both;margin:0px auto 0 auto; width:100%; max-width:1000px; }
+.banner li { display: inline-block;position:Relative;width:14%; /*transition:all 0.3s ease;*/}
+.banner li:before{content:""; display:block; width:1px; height:59px; background:#bcbcbc; position:absolute; left:0; top:12px; }
+			.banner li:first-child{padding-left:0; }
+			.banner li:first-child:before{display:none; }
+
+
+/*.banner li:hover {top:-8px; transition:all 0.3s ease;}*/
+.banner li a {display:block; width:100%; /*height:80px; */padding-top:62px; padding-bottom:20px; -webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
+.banner li a img{position:absolute; left:0; top:0; opacity:0; transition:all 0.5s ease;}
+
+
+.banner li a p {color:#555;font-size:16px; line-height:120%; letter-spacing:-0.2pt; font-weight: 400;font-family: 'NotoKR-Medium', sans-serif; text-align: center;}
+.banner li a:hover {-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
+
+	
+	.banner li.one a {background:url('../images/main/ico_f_01.png') center 0px no-repeat;}
+	.banner li.two a {background:url('../images/main/ico_f_02.png') center 0px no-repeat;}
+	.banner li.three a {background:url('../images/main/ico_f_03.png') center 0px no-repeat;}
+	.banner li.four a {background:url('../images/main/ico_f_04.png') center 0px no-repeat;}
+	.banner li.five a {background:url('../images/main/ico_f_05.png') center 0px no-repeat;}
+	.banner li.six a {background:url('../images/main/ico_f_06.png') center 0px no-repeat;}
+	.banner li.seven a {background:url('../images/main/ico_f_07.png') center 0px no-repeat;}
+	
+	.banner li.one a:hover {background:url('../images/main/ico_f_01.png') center 5px no-repeat;}
+	.banner li.two a:hover {background:url('../images/main/ico_f_02.png') center 5px no-repeat;}
+	.banner li.three a:hover {background:url('../images/main/ico_f_03.png') center 5px no-repeat;}
+	.banner li.four a:hover {background:url('../images/main/ico_f_04.png') center 5px no-repeat;}
+	.banner li.five a:hover {background:url('../images/main/ico_f_05.png') center 5px no-repeat;}
+	.banner li.six a:hover {background:url('../images/main/ico_f_06.png') center 5px no-repeat;}
+	.banner li.seven a:hover {background:url('../images/main/ico_f_07.png') center 5px no-repeat;}
+
+
+.banner li a:hover{/*opacity: 85%;*/}
+.banner li a:hover p {color:#333;}
+
+
+
+/*====================== //배너 ========================*/
+
+
+/* 하단 */
+#footer {width:100%; height: auto; border-top:0px solid #ccc;clear:both;background: #061739; }
+		.foot{ border-bottom: 1px solid #223355;}
+		.footer_in{width:1170px; padding: 15px 0; }
+		.footer_in ul{overflow:hidden; clear:both;}
+			.footer_in li{ display: inline-block; padding:0 15px 0px 0px; position:Relative; /*width: 165px; */ }
+			.footer_in li:before{content:""; display:block; width:1px; height:13px; background:#223355; position:absolute; left:0; top:2px;}
+			.footer_in li:first-child{padding-left:64px; text-align: right; }
+			.footer_in li:first-child:before{display:none; }
+			.footer_in li:last-child{padding-left:15px; text-align: left; }
+			.footer_in li a{color:#cccccc; letter-spacing:-0.6pt; line-height:120%; font-size: 16px; font-family:"NotoKR-Regular", Sans-serif;}
+			
+		.login_footer {clear:both;margin:0 auto; padding:0px 0 0 0; text-align:center;}
+		.login_footer #footer {width:100%; height: auto; border-top:0px solid #ccc;clear:both;background: #061739; }
+		.login_footer address {font-size:15px; font-family:"NotoKR-Regular", Sans-serif;letter-spacing:-0.2pt; line-height:140%;color: #ddd;}
+		.login_footer address span {margin-left:20px;}
+		.login_footer .copyright {margin-top:5px;color:#445576; font-size:13px; letter-spacing: 0.05em; font-weight: 400;line-height:140%; padding-bottom: 10px; }
+#footer br {display:none;}
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************
+	@media 1024px~1200px
+*******************************************************************************/
+@media all and (max-width:1200px){
+
+
+/* Footer */
+#footer {min-width:100%; width:100%;}
+#footer .foot{min-width:100%; width:100%; text-align:center;}	
+#footer .footer_in {float:none; max-width:100%; text-align:center;}
+		.footer_in ul{padding-left: 0px;}
+
+}
+
+
+/*******************************************************************************
+	@media 980~1024px
+*******************************************************************************/
+@media all and (max-width:1024px){
+
+.login_wrap h1 {width:95%; margin:0 auto;}	
+.login_title {width:95%;}	
+
+
+.login_box {width:95%;height:325px; background:#fff url(../images/main/login_d_bg.png) center 47px no-repeat; }
+.login_box .login_con {padding:40px 0 40px 5%;}
+
+.login_box .login_con .login_txt {width:380px;}
+.login_box .login_con h3 {font-size:45px;} 
+.login_box .login_con .login_txt p {line-height: 130%; font-size: 16px; letter-spacing:-0.5pt; }
+
+.login_form .login-main {min-height: 20px; padding:10px 0px 0 0 ;font-size: 15px;line-height: 120%; letter-spacing: -0.4pt;  }
+
+
+.login_form .login_find {width:100%;padding-top:0px; margin-top: 5px;  z-index: 99999;}
+.login_form .login_find a{float: left; width: 185px;  height: 46px; line-height: 46px; margin-right:10px;font-size:16px;  }
+.login_form .login_find a:last-child {margin-right: 0px;}
+
+.login_form .login_find a i { line-height:25px; width: 30px; height: 25px;}
+	
+	
+.latestWrap  {width: 100%;}
+.latestWrap_in {width: 450px;}	
+.subject {width: 80%;}
+	
+/*====================== 배너 ========================*/
+
+.banner {width:95%;}
+.banner li {width:16.3%;}
+/*====================== //배너 ========================*/		
+	
+#footer br {display:block; }	
+/* 하단 */
+#footer {float:none; max-width:100%; text-align:center;}
+			.footer_in li a{line-height:120%; font-size: 14px; }
+		.login_footer address {font-size:15px; line-height:140%;}
+		.login_footer address span {margin-left:20px;}
+		.login_footer .copyright {font-size:12.5px; letter-spacing: 0.05em; line-height:140%; padding-bottom: 5px; }
+	
+	
+}
+
+
+/*******************************************************************************
+	@media 980~992px
+*******************************************************************************/
+@media all and (max-width:992px){
+	
+
+}
+
+
+/*******************************************************************************
+	@media 768~980px
+*******************************************************************************/
+@media all and (max-width:980px){
+
+	
+.login_title {top:75px; height:385px; width:95%;}
+.login_title h2 {font-size:32px;}
+.login_title h4 {font-size:18px; line-height:140%; letter-spacing:2.5pt; }
+.login_title h4 br {display:none;}
+	
+	
+.login_wrap h1 img {/*width:50%; margin:0 auto;*/}	
+
+
+.login_box {width:95%; }
+.login_box .login_con {padding:40px 0 40px 6%; max-width: 360px; }
+
+.login_box .login_con .login_txt {width:100%;}
+.login_box .login_con h3 {font-size:40px;} 
+.login_box .login_con .login_txt p {line-height: 130%; font-size: 15px; letter-spacing:-0.5pt; }
+
+.login_form .login-main {width:100%;font-size: 15px; }
+
+.login_form .login_find {width:100%;}
+.login_form .login_find a{float: left; width: 49%;  height: 46px; line-height: 46px; margin-right:2%;font-size:15px;  }
+.login_form .login_find a:last-child {margin-right: 0px;}
+
+.login_box .login_con a.btn_down {font-size:15px; width: 100%}	
+/*====================== 배너 ========================*/
+.banner li a p {font-size:15px;}
+/*====================== //배너 ========================*/
+
+.tab.list li a {font-size:20px;}	
+.latestWrap  {width: 100%;}
+.latestWrap_in {width: 420px;}	
+.subject {width: 80%;}
+	
+.login_footer {width:100%;}
+	.login_footer address span {display:block; margin-left:0;}
+.footer_in li:first-child{padding-left:62px; text-align: right; }
+	
+}
+
+/*******************************************************************************
+	@media 900px
+*******************************************************************************/
+@media all and (max-width:900px){
+
+
+.login_box .login_con {padding:40px 0 40px 5%;}
+.latestWrap_in {width: 380px;}		
+}
+
+/*******************************************************************************
+	@media 768px ~ 860px
+*******************************************************************************/
+@media all and (max-width:860px) { 
+	
+.login_title {top:75px; height:370px;}
+.login_title h2 {font-size:30px;}
+.login_title h4 {font-size:16px; line-height:140%; letter-spacing:2.5pt; }
+.login_title h4 br {display:none;}
+	
+/*====================== 로그인 아이콘 ========================*/
+.login_icon {padding:20px 0 12px 0; margin: 0 0 0px 0;}
+.login_icon ul {width:100%; max-width:600px;}
+.login_icon li {width:33%;}
+.login_icon li a {padding-top:98px; padding-bottom:20px;}
+.login_icon li a img{}
+
+
+.login_icon li a p {font-size:16px;}
+
+/*====================== //로그인 아이콘 ========================*/	
+
+.footer_in li:first-child{padding-left:60px; text-align: right; }	
+}
+
+/*******************************************************************************
+	@media 768px ~ 860px
+*******************************************************************************/
+
+@media screen and (max-width:840px) {
+.login_wrap {background:url('../images/main/main_bg_m.jpg') center 0px no-repeat;}
+.login_wrap h1 {width:95%; height:78px;}
+.login_wrap h1 a {padding:15px 0 27px 0px;}
+	.login_wrap h1 img {/*width:50%;*/ width: 70%;}	
+
+.login_box {width:95%;height:570px; background:#fff url(../images/main/login_d_bg.png) center 80px no-repeat; }
+.login_box .login_con { width: 90%; max-width: 100%; padding:40px 5% 30px 5%;}
+
+.login_box .login_con .login_txt {width:100%;}
+.login_box .login_con h3 {font-size:35px;} 
+.login_box .login_con .login_txt p {line-height: 130%; font-size: 15px; letter-spacing:-0.5pt; }
+
+.login_form .login-main {min-height: 20px; padding:15px 0px 0 0 ;font-size: 15px;line-height: 120%; letter-spacing: -0.4pt;  }
+
+
+.login_form .login_find {width:100%;padding-top:0px; margin-top: 10px;  z-index: 99999;}
+.login_form .login_find a{float: left; width: 49%;  height: 46px; line-height: 46px; margin-right:2%;font-size:15px;  }
+.login_form .login_find a:last-child {margin-right: 0px;}
+
+.login_form .login_find a i { line-height:25px; width: 30px; height: 25px;}
+
+.login_box .login_con a.btn_down {
+    margin-top: 20px;	
+	width: 100%;
+    height: 50px;
+    line-height: 46px;
+	letter-spacing: -0.2pt;
+    font-size:15px; }	
+	
+
+	
+/* =================  게시판 =================*/
+.latestWrap  {width: 100%; padding:30px 0px 40px 0px;}
+.latestWrap_in { width: 90%; height:100%;}
+.tab.list:last-child {border-top:1px dashed #ddd; padding-top: 25px;}
+.tab.list li a {font-size:20px;}
+.tab.list li a span {display:inline-block; padding:0px 25px 0px 0; cursor:pointer;}
+
+.tab.list li ul {width:100%;top:40px;}
+.tab.list li li {height:30px; line-height:30px; }
+.tab.list li li a {font-size:15px;}
+
+
+.subject {width: 85%;}
+
+.tab.list li.active li a span {font-size: 15px;}
+	
+	
+}
+
+
+/*******************************************************************************
+	@media 640px~768px
+*******************************************************************************/
+@media all and (max-width:768px){
+
+
+
+
+/*====================== 배너 ========================*/
+.banner li {width:16.2%;  }
+.banner li a {padding-top:60px; padding-bottom:20px;}
+.banner li a p {font-size:14px; line-height:120%; letter-spacing:-1pt;}
+/*====================== //배너 ========================*/
+	
+	
+}
+
+/*******************************************************************************
+	@media ~640px
+*******************************************************************************/
+@media all and (max-width:640px){
+
+.login_wrap {background:url('../images/main/main_bg_m.jpg') center 0px no-repeat;}
+.login_wrap h1 {width:95%; height:78px;}
+.login_wrap h1 a {padding:15px 0 27px 0px;}
+	.login_wrap h1 img {/*width:50%;*/ width: 70%;}
+	
+.login_title {top:75px; width: 95%; height:350px;}
+.login_title h2 {font-size:26px;}
+.login_title h4 {font-size:14px; line-height:140%; letter-spacing:0.7pt; }
+.login_title h4 br {display:none;}
+	
+	
+.login_icon { padding:10px 0 8px 0;}
+.login_icon ul { width:90%; max-width:600px;}
+.login_icon li a p {font-size:14px; letter-spacing: -0.5pt;}	
+	
+/*====================== 로그인 아이콘 ========================*/
+.login_icon {padding:20px 0 12px 0; margin: 0 0 0px 0;}
+.login_icon ul {width:90%; max-width:600px;}
+.login_icon li {width:33%;}
+.login_icon li a {padding-top:98px; padding-bottom:20px;}
+.login_icon li a img{}
+
+
+.login_icon li a p {font-size:16px;}
+
+/*====================== //로그인 아이콘 ========================*/	
+
+.login_box {width:95%;height:550px; background:#fff url(../images/main/login_d_bg.png) center 70px no-repeat; }
+	
+.login_box .login_con h3 {font-size:32px;} 
+.login_box .login_con .login_txt p {line-height: 130%; font-size: 13px; letter-spacing:-0.5pt; }
+
+.login_form .login-main {min-height: 20px; padding:15px 0px 0 0 ;font-size: 14px;line-height: 120%; letter-spacing: -0.4pt;  }
+
+
+.login_form .login_find {width:100%;padding-top:0px; margin-top: 10px;  z-index: 99999;}
+.login_form .login_find a{float: left; width: 49%;  height: 46px; line-height: 46px; margin-right:2%;font-size:14px;  }
+.login_form .login_find a:last-child {margin-right: 0px;}
+
+.login_form .login_find a i { line-height:25px; width: 30px; height: 25px;}
+
+.login_box .login_con a.btn_down {
+    margin-top: 20px;	
+	width: 100%;
+    height: 50px;
+    line-height: 46px;
+	letter-spacing: -0.2pt;
+    font-size:14px; }	
+	
+/* =================  게시판 =================*/
+.tab.list li ul {width:100%;top:35px;}	
+.tab.list:last-child {padding-top: 20px;}
+.tab.list li a {font-size:18px;}
+.tab.list li li a {letter-spacing:-0.5pt; font-size:14px;}
+.tab.list li.active li a span {font-size: 14px;}
+.subject {width: 80%;}			
+/*====================== 배너 ========================*/
+
+.banner li {width:32.5%; }
+.banner li a {padding-top:60px; padding-bottom:20px;}
+.banner li a p {font-size:14px; line-height:120%; letter-spacing:-0.5pt;}
+
+			.banner li:nth-child(4) {padding-left:0; }
+			.banner li:nth-child(4):before{display:none; }	
+	
+/*====================== //배너 ========================*/		
+
+	.login_footer {padding:0px 0 0 0;}
+	
+
+/* footer */
+#footer .footer_in {width:94%; padding: 1% 0 1% 0;}
+.footer_in ul{padding-left: 0px; padding: 5px 0 5px 0;}
+			.footer_in li a{line-height:140%; font-size: 13px;  }
+			
+
+	.login_footer address {font-size:13px; line-height:140%;margin-bottom: 5px; margin-top: 5px;}
+	.login_footer .copyright {font-size:11px; letter-spacing: 0em; line-height:120%; padding-bottom: 5px; }	
+
+.footer_in li:first-child{padding-left:58px; text-align: right; }	
+}
+
+
+/*******************************************************************************
+	@media ~495px
+*******************************************************************************/
+@media all and (max-width:495px){
+
+
+}
+
+
+
+/*******************************************************************************
+	@media ~480px
+*******************************************************************************/
+@media all and (max-width:480px){
+
+.login_wrap {background:url('../images/main/main_bg_m.jpg') center -30px no-repeat;}
+.login_wrap h1 {width:95%; height:73px;}
+.login_wrap h1 a {padding:15px 0 22px 0px;}
+.login_wrap h1 img {/*width:50%;*/ width: 80%;}
+
+.login_title {top:60px; width: 95%; height:300px;}
+.login_title h2 {font-size:20px;letter-spacing:-0.5pt;line-height:120%;}
+.login_title h4 {font-size:14px; line-height:140%; letter-spacing:0pt; }
+.login_title h4 br {display:block;}
+
+/*====================== 로그인 아이콘 ========================*/
+
+.login_icon li.one a {background:url('../images/main/icon_01_m.png') center 18px no-repeat;}
+	.login_icon li.two a {background:url('../images/main/icon_02_m.png') center 18px no-repeat;}
+	.login_icon li.three a {background:url('../images/main/icon_03_m.png') center 18px no-repeat;}
+
+	.login_icon li.one a:hover {background:rgba(50,106,215, 0.5) url('../images/main/icon_01_m.png') center 13px no-repeat;}
+	.login_icon li.two a:hover {background:rgba(41,212,249, 0.5) url('../images/main/icon_02_m.png') center 13px no-repeat;}
+	.login_icon li.three a:hover {background:rgba(50,106,215, 0.5) url('../images/main/icon_03_m.png') center 13px no-repeat;}
+	
+.login_icon {padding:20px 0 12px 0; margin: 0 0 0px 0;}
+.login_icon ul {width:80%; max-width:600px;}
+.login_icon li {width:33%;}
+.login_icon li a {padding-top:76px; padding-bottom:10px;}
+.login_icon li a img{width: 35px;}
+
+
+.login_icon li a p {font-size:15px;}
+
+/*====================== //로그인 아이콘 ========================*/	
+	
+.login_box {width:95%;height:530px; background:#fff url(../images/main/login_d_bg.png) center 60px no-repeat; }	
+.login_box .login_con {padding:30px 5% 30px 5%;}
+span.title_white {letter-spacing:-0.5pt !important;}
+span.title_pink {letter-spacing:-0.5pt;}
+span.title_darkpink {letter-spacing:-0.5pt;}
+
+
+	
+/*====================== 배너 ========================*/
+
+.banner li a {padding-top:60px; padding-bottom:20px;}
+.banner li a p {font-size:13px; line-height:120%; letter-spacing:-0.5pt;}
+
+/*====================== //배너 ========================*/	
+
+/* =================  게시판 =================*/
+.subject {width: 75%;}			
+/*====================== 배너 ========================*/
+	
+}
+
+/*******************************************************************************
+	@media ~380px
+*******************************************************************************/
+@media all and (max-width:380px){
+
+.login_wrap h1 {width:95%; height:63px;}
+.login_wrap h1 a {padding:10px 0 17px 0px;}
+	
+.login_title {top:60px; width: 95%; height:280px;}
+.login_title h2 {font-size:17px;letter-spacing:-0.5pt;line-height:120%;}
+.login_title h4 {font-size:13px; line-height:140%; letter-spacing:0pt; }
+.login_title h4 br {display:block;}
+	
+
+
+.login_icon li a p {font-size:13px;}	
+
+.login_box {width:95%;height:440px; background:#fff url(../images/main/login_d_bg.png) center 22px no-repeat; }	
+.login_box .login_con { width: 90%; padding:30px 5% 20px 5%;}	
+.login_box .login_con h3 {font-size:30px;} 
+.login_box .login_con .login_txt p {line-height: 130%; font-size: 13px; letter-spacing:-0.5pt; }
+
+.login_form .login-main {min-height: 18px; padding:10px 0px 0 0 ;font-size: 14px;line-height: 120%; letter-spacing: -0.4pt;  }
+
+
+.login_form .login_find {width:100%;padding-top:0px; margin-top: 5px;  z-index: 99999;}
+.login_form .login_find a{float: left; width: 49%;  height: 40px; line-height: 40px; margin-right:2%;font-size:14px;  }
+.login_form .login_find a:last-child {margin-right: 0px;}
+
+.login_form .login_find a i { line-height:25px; width: 30px; height: 25px;}
+
+.login_box .login_con a.btn_down {
+    margin-top: 10px;	
+	width: 100%;
+    height: 44px;
+    line-height: 40px;
+	letter-spacing: -0.2pt;
+    font-size:14px; }		
+
+/* =================  게시판 =================*/
+.tab.list {min-height:90px;}	
+.tab.list li ul {width:100%;top:30px;}	
+.tab.list:last-child {padding-top: 20px;}
+.tab.list li a {font-size:16px;}
+.tab.list li li a {letter-spacing:-0.5pt; font-size:12px;}
+.tab.list li.active li a span {font-size: 12px;}
+	.tab.list li li {float:none; position:relative; height:22px; line-height:22px; }	
+.subject {width: 80%;}	
+
+.btn-bbsmore {right:10px; top:-3px;}	
+
+	
+	
+	
+/* footer */
+#footer .footer_in {width:94%; padding: 1% 0 1% 0;}
+.footer_in ul{padding-left: 0px; padding: 2px 0 2px 0;}
+			.footer_in li a{line-height:120%; font-size: 10px;  }
+			
+	.login_footer address {font-size:10px; line-height:140%;margin-bottom: 5px; margin-top: 5px;}
+	.login_footer .copyright {font-size:8px; letter-spacing: 0em; line-height:120%; padding-bottom: 5px; }
+.footer_in li:first-child{padding-left:46px; text-align: right; }		
+	
+	
+}
+
+
+
+/*******************************************************************************
+	@media ~320px
+*******************************************************************************/
+@media all and (max-width:320px){
+
+/*====================== 배너 ========================*/
+
+.banner li a {}
+.banner li a p {font-size:12px;}
+
+/*====================== //배너 ========================*/
+	
+.login_icon li a p {font-size:12px;}			
+/* footer */
+#footer .footer_in {width:94%; padding: 1% 0 1% 0;}
+.footer_in ul{padding-left: 0px; padding: 2px 0 2px 0;}
+			.footer_in li a{line-height:100%; font-size: 9px;  }
+	.login_footer address {font-size:9px; line-height:140%;margin-bottom: 5px; margin-top: 5px;}
+	.login_footer .copyright {font-size:7px !important; letter-spacing: 0em; line-height:120%; padding-bottom: 5px; }
+	
+
+}

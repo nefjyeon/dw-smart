@@ -1,0 +1,20 @@
+		.subCon h2 {font-size: 20px; background: none;}
+		.table-title {position: fixed; top: 0px; left: 0px; width: 100%; height: 30px; background: #fff; z-index: 1001; padding: 5px; border-bottom: 2px solid #193657;}
+		.table-nav {position: fixed; top: 40px; left: 0px; width: 250px; height: 100%; background: #eee; z-index: 1000; padding: 20px 10px; overflow-y: auto;}
+		.table-nav ul {line-height: 24px; font-weight: bold;}
+		.table-nav ul ul {margin-left: 15px;}
+		.table-nav > ul > li {margin-bottom: 15px;}
+		.table-nav > ul > li > ul > li {margin-bottom: 10px;}
+		.table-nav ul ul ul {font-weight: normal; margin-bottom: 0;}
+
+		.table-nav ul ul ul li, .table-nav .navTitleLink {cursor: pointer;}
+		.table-nav ul ul ul li:hover, .table-nav li.on
+			, .table-nav .navTitleLink:hover, .table-nav .navTitleLink.on {color: #ff9800; font-weight: bold;}
+		.table-nav ul ul ul li:hover span.dblue, .table-nav li.on span.dblue {background: #ff9800;}
+
+		.table-cont {margin-left: 260px; margin-top: 30px;}
+
+		.btn {min-width: 80px;}
+		.btnSaveArea, .btnStart {position: absolute; left: 50%;}
+		.btnStart {margin: 0 71px;}
+		.btnNext {position: absolute; right: 30px;}

@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+/*
+=========================================================
+components
+=========================================================
+*/
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.xs-show { display: none; }
+
+/* mobile */
+@media screen and (min-width: 1px) and (max-width: 767px) {
+	.xs-hidden { display: none; }
+	.xs-show { display: block; }
+	.button.system-btn { padding: 3px 5px; line-height: 10px; }
+	.icon.log-in { width: 13px; height: 10px; background-size: cover; }
+	.icon.log-out { width: 13px; height: 10px; background-size: cover; }
+	.icon.mb-menu { width: 18px; height: 17px; background-size: cover; }
+	.button.min-width { min-width: 90px; }
+}
+
+/* // components */
+
+/*
+=========================================================
+media
+=========================================================
+*/
+/* tablet */
+
+@media all and (max-width:1200px){
+
+/* ======================= 상단메뉴 ======================= */
+#nav-new {line-height: 62px; padding: 10px 0 10px 0; }
+#nav-new .nav-new li { font-size: 16px; line-height: 140%;padding: 10px 20px;}
+#nav-new .nav-new li a {line-height: 140%; padding-left: 10px; padding-right: 10px; }
+
+
+	
+}
+
+@media screen and (max-width: 1023px) {
+	
+}
+
+/* mobile */
+@media screen and (min-width: 1px) and (max-width: 767px) {
+	
+}
+
+/* // media */
+
+
+/*
+=========================================================
+.table-responsive
+=========================================================
+*/
+
+/* tablet */
+@media screen and (max-width: 1023px) {
+
+}
+
+/* mobile */
+@media screen and (min-width: 1px) and (max-width: 767px) {
+	.table-responsive {
+		width: 100%;
+		overflow-x: auto;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		-webkit-overflow-scrolling: touch;
+	}
+	.table-responsive > table th,
+	.table-responsive > table td {
+		white-space: nowrap;
+	}
+}
+
+/* // .table-responsive */
+
+
+/*
+=========================================================
+layout
+=========================================================
+*/
+
+/* tablet */
+@media screen and (max-width: 1023px) {
+	#wrap-new { min-width: auto; }
+	#nav-new .nav-new li a { padding-left: 10px; padding-right: 10px;  }
+	#nav-new .nav-new li:first-child a { padding-left: 20px; }
+
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 767px) {
+	#header-new { height: auto; }
+	#header-new .header-new { display: block; position: relative; background: #243d70; }
+	/*
+	#header-new .col-left { display: block; width: auto; height: auto; border-right: none; border-bottom: none;}
+	#header-new .col-left img { height: 37px; }*/
+	
+	#header-new .col-left { display: table-cell; vertical-align: top; width: 100%; height: 100px; margin-top:50px;border-bottom: none; background: #243d70;}
+	#header-new .col-left h1 {width: 65%; padding: 50px 0 15px 16px;}
+	
+	
+	#header-new .col-right { display: block; border-bottom: none; }
+	
+	.subCon h2{padding-left: 10px; padding-bottom: 20px; font-size: 20px; letter-spacing: -1pt; line-height:120%; background: url(../images/sub/tit_arrow.jpg) left 4px no-repeat;}
+	.subCon h3{padding-bottom:15px;font-size:18px;line-height: 120%;font-family:"NotoKR-Regular", Sans-serif;}
+	.subCon h4{padding-bottom:10px;font-size:16px;line-height: 120%;font-family:"NotoKR-Regular", Sans-serif;}
+	.subCon h5{padding-bottom:10px;font-size:14px;line-height: 120%;font-family:'NotoKR-Light',sans-serif; font-weight: 400;  letter-spacing: -0.5pt;}
+	.tabBox h5{padding-bottom:10px;font-size:14px;line-height: 120%;font-family:'NotoKR-Light',sans-serif; letter-spacing: -0.5pt; font-weight: 400;  }
+	
+	/* 
+	#header-new .login-new {position: absolute;right: 0; top: 0; text-align: right; min-height: 26px; padding:10px 20px; font-size: 14px; background: #fff;}
+	#header-new .login-new .button { margin-left: 10px; }*/ 
+	
+	#header-new .login-new {position: absolute; right: 0; top: 0px; text-align: right; min-height: 20px; padding:5px 20px; font-size: 13px; letter-spacing: -0.5pt; background: #f6f6f6; width: 100%;font-family:"NotoKR-Regular", Sans-serif;}
+	
+	#header-new .login-new a {font-size: 13px !important; letter-spacing: -0.5pt;}
+	#header-new .login-new a span{font-size: 13px !important; letter-spacing: -0.5pt;}
+	.button.system-btn { font-size: 13px; padding: 5px 10px 5px 10px;font-family:"NotoKR-Regular", Sans-serif;  font-weight: 500; letter-spacing: -1em;}
+	#header-new .login-new .button { margin-left: 10px; }
+
+	#nav-new { height: auto; background: #1e4faf; padding:0;}	
+	#nav-new .mobile-menu { display: block; padding: 10px 15px 10px; font-size: 17px;font-family:"NotoKR-Regular", Sans-serif; color: #fff; letter-spacing: -0.5pt;}
+	#nav-new .mobile-menu .icon { margin-right: 5px; width: 20px; }
+
+	.lnb-title { display: block; font-size: 18px; color: #fff; background-color: #f3f3f3; border-bottom: 1px solid #d9d9d9; }
+	.lnb-title > p { display: block; height: auto; text-align: left; padding: 15px; width: auto; }
+	
+	
+	#nav-new .nav-new { display: none; }
+	#nav-new .nav-new li { float:none; background: #2966dc; line-height: 120%;font-family:"NotoKR-Regular", Sans-serif; padding: 8px 20px; font-size:14px;border-bottom: 1px solid #275abe; }
+	#nav-new .nav-new li:after { display: none; }
+	#nav-new .nav-new li:before{display: none;}
+	#nav-new .nav-new li a { display: block; padding-left: 23px; padding-right: 15px;line-height: 120%;}
+	#nav-new .nav-new li:first-child a {padding-left: 23px;}
+
+	.sub-container { display: block; width: 100%; }
+	.sub-container .col-lnb { display: block; width: auto; padding-bottom: 0; border-right: none; }
+	.sub-container .col-contents { display: block; padding: 35px 15px; padding-bottom: 65px; }
+
+	.mobile-lnb { border-bottom: 1px solid #d9d9d9; padding: 10px 15px; }
+	.mobile-lnb select {
+		width: 100%; border: none; outline: none;
+	}
+
+	.bottom-button-wrap { background-color: #f2f2f2; border-top: 1px solid #d9d9d9; padding: 7px 15px; min-height: 25px; text-align: center; }
+
+
+	.mobile-open #nav-new .nav-new { display: block; }
+	
+	.button.size-mid { font-size: 12px; padding: 5px;}
+
+}
+
+
+
+/* // layout */
+
+/*
+=========================================================
+main
+=========================================================
+*/
+@media screen and (max-width: 1023px) {
+	.main-container .col-left { display: none; }
+	.main-container .col-right { display: none; }
+}
+
+@media screen and (min-width: 1px) and (max-width: 767px) {
+	.top-visual-area .main-logo { left: 15px; top: 15px; }
+	.top-visual-area .main-logo img { width: 100px;}
+	.top-visual-area { max-width: auto; }
+	.top-visual-area .visual { background-size: cover; height: 200px;}
+	.top-visual-area .visual-menu { position: static; left: 0; width: 100%; margin-left: 0; background-color: #c5c5c5; }
+
+	.main-container .col-center {width: auto;}
+
+	.main-container .main-login { padding:15px;  }
+	.main-container .main-list { padding:15px; }
+	.main-container .login-box .id { width: auto; padding-left: 5px; padding-right: 5px;  }
+	.main-container .login-box .pw {width: auto; padding-left: 5px; padding-right: 5px;  }
+	.main-container .login-box .login-b { width: auto;}
+	.main-container .login-box .last {padding-left: 5px;}
+	.main-container .login-box .main-button { padding: 10px 10px; display: block; white-space:nowrap; font-size: 10px; }
+	.main-container .login-box .main-button.login-btn { min-width: auto; }
+	.main-container .login-box input[type="text"],
+	.main-container .login-box input[type="password"] { font-size: 10px; }
+
+	.main-container .round-box { display: block; width: auto; }
+	.main-container .round-box .title { display: none;}
+	.main-container .round-box .cont { display: block; }
+
+	.main-footer { 
+		margin-top: 0px; padding: 15px;
+	}
+	.main-footer .foot-container { width: auto; }
+	.main-footer .copyrights { font-size: 8px; line-height: 14px; color: #666666; }
+	.main-footer .img-area { position: static; text-align: center; margin-top: 10px; }
+}
+/* // main */
+
+
+
+
+/*******************************************************************************
+	@media ~480px 20241226 추가
+*******************************************************************************/
+@media all and (max-width:480px){
+
+
+.subCon h2{padding-left: 13px; padding-bottom: 10px; font-size: 18px !important; background: url(../images/sub/tit_arrow.jpg) left 1px no-repeat;}
+.subCon h3{padding-bottom:8px; font-size:18px;}
+.subCon h3.botPad5 {padding-bottom: 5px;}
+.subCon h4{padding-bottom:8px;font-size:16px;}
+.subCon h5{padding-bottom:8px;font-size:14px;}	
+
+	
+.tabBox{padding-bottom:10px;}	
+
+.box_txt {font-size: 10px;  padding: 8px; line-height: 130%;}	
+	
+	
+select  {font-size: 10px;}	
+}
+
+
+
+/*
+=========================================================
+subOrder
+=========================================================
+*/
+
+/* // subOrder */

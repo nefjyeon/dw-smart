@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+  <!--[if IE 8 ]> <html class="no-js lt-ie9 ie8" lang="ko-KR">
+    <![endif]--><!--[if IE 9 ]> <html class="no-js lt-ie10 ie9" lang="ko-KR">
+    <![endif]--><!--[if (gte IE 10)|!(IE)]><!-->
+  <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>두원공과대학교 스마트교육행정시스템</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,800,900,500">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/board.css?v=1">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2">
+
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<link rel="stylesheet" href="/css/jquery-ui.css">
+<link rel="stylesheet" href="/css/jquery-ui-timepicker-addon.css">
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<script type="text/javascript" src="/lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-sliderAccess.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="/lib/jquery.play.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/js/jquery.ncs.js"></script>
+<script type="text/javascript" src="/lib/jquery.form.js"></script>
+<script type="text/javascript" src="/lib/placeholders.min.js"></script>
+
+<link rel="stylesheet" href="/css-new/responsive.css?v=1">
+<script type="text/javascript" src="/js/jquery.ncs.new.js?v=1"></script>
+<script src="https://kit.fontawesome.com/6026cbbd9c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="wrap-new">
+	<!-- Header -->
+
+  <!-- 관리자, 교직원 -->
+	<header id="header-new">
+		<div class="login-new">
+			<div class="wrap-admin">
+				<i class="icon admin"></i><span><a href="#">시스템관리자님</a> 환영합니다.</span>
+			</div>
+			<div class="btn-area">
+				<a href="#" class="button system-btn"><span>로그아웃</span></a>
+			</div>
+		</div>
+
+		<div class="header-new">
+			
+			<div class="col-left">
+				<h1>
+					<a href="../login.html">
+						<picture>
+							<source media="(max-width: 1024px)" srcset="../img/logo_doowon-wh.svg">
+							<source media="(min-width: 1025px)" srcset="../img/logo_doowon-ori.svg">
+							<img src="../img/logo_doowon-ori.svg" alt="두원공과대학교 스마트교육행정시스템">
+						</picture>
+					</a>
+				</h1>
+			</div>
+			<div class="col-right">
+				
+				<!-- Nav -->
+				<nav id="nav-new">
+					<div class="mobile-menu xs-show"><a href="#none"><i class="icon mb-menu"></i></a>
+						<span>강의평가</span>
+					</div>
+					<ul class="nav-new">
+						<li class="">
+							<a href="#none">나의 주요 현황</a>
+							<ul class="nav-sub">
+								<li><a href="sub0_myMain.html">나의 주요 현황</a></li>
+							</ul>
+						</li>
+						<li class="active">
+							<a href="#none">수강신청</a>
+							<ul class="nav-sub">
+								<li><a href="sub1_01-1.html">강좌 검색</a></li>
+								<li><a href="sub1_02-1.html">수강 신청</a></li>
+								<li><a href="sub1_02-2.html">수강 신청 내역</a></li>
+								<li><a href="#">시간표 조회</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#none">나의 학점 취득현황</a>
+							<ul class="nav-sub">
+								<li><a href="#">나의 취득학점</a></li>
+								<li><a href="#">이수구분별 학점현황</a></li>
+								<li><a href="#">학기별 성적 조회</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#none">강의평가</a>
+							<ul class="nav-sub">
+								<li><a href="#">수강 교과목 조회 및<br>강의평가 참여현황</a></li>
+								<li><a href="sub2_03-1.html">교과목별 강의평가 참여</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#none">휴복학 신청</a>
+							<ul class="nav-sub">
+								<li><a href="sub4_00-1.html">휴학 신청</a></li>
+								<li><a href="sub4_00-2.html">복학 신청</a></li>
+								<li><a href="#">신청 현황조회</a></li>
+								<li><a href="#">증빙서류 업로드</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#none">공지사항</a>
+							<ul class="nav-sub">
+								<li><a href="#">공지사항</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<!-- //Nav -->
+			</div>
+		</div>
+	</header>
+	<!-- //관리자, 교직원 -->
+	<!-- //Header -->
+
+
+	<!-- Container --> 
+	<section class="sub-container" >
+
+		<div class="mobile-lnb xs-show">
+			<select id="lnbOperationSelect" class="" onchange="goLnb(this, '', '');">
+				<option selected="" value="">나의 주요 현황</option>
+			</select>
+		</div>
+
+		<!-- 사이드메뉴시작 -->
+		<div class="col-lnb">
+
+			<div class="lnb-title">
+				<p>나의 주요 현황</p>
+			</div>
+
+			<!-- 진짜메뉴시작 -->
+      <div class="lnb lnb2 lnb-t1 xs-hidden">
+				
+				<div class="lnb-menu active ">
+					<a href="sub0_myMain.html">
+						<p class=" active">나의 주요 현황</p>
+					</a>
+				</div>
+
+      </div>
+      <!-- 진짜메뉴끝 -->
+
+
+    </div>
+    <!-- 사이드메뉴끝 -->
+
+
+
+    <!-- 관리자 -->
+		<div class="col-contents">
+			<div class="subCon">
+				<!-- 컨텐츠 영역 -->
+          <h3>나의 주요 현황</h3>
+
+					<div class="main-status">
+						<ul class="dash-tabBox-list">
+							<li>
+								<h4>취득학점 / 졸업학점</h4>
+								<img class="dash-obj" src="../img/obj_dboard1.png" alt="">
+								<p class="rate">99<span class="-sm"> / 120</span></p>
+								<div class="detail-rate">졸업까지 37학점 남음</div>
+							</li>
+							<li>
+								<h4>전체 평점평균</h4>
+								<img class="dash-obj" src="../img/obj_dboard2.png" alt="">
+								<p class="rate">4.12<span class="-sm"> / 4.5</span></p>
+								<div class="detail-rate">전체 이수과목 기준</div>
+							</li>
+							<li>
+								<h4>나의 강의평가 참여 현황</h4>
+								<img class="dash-obj" src="../img/obj_dboard3.png" alt="">
+								<p class="rate">6<span class="-sm"> / 8 강좌</span></p>
+								<div class="detail-rate">8강좌 중 6강좌 참여 완료 (참여율: 75%)</div>
+							</li>
+							<li>
+								<h4>
+									휴/복학 신청 현황
+								</h4>
+								<img class="dash-obj" src="../img/obj_dboard4.png" alt="">
+								<ul class="wrap_labeling">
+									<li><span class="labeling bg3">휴학 신청</span> <span>1건</span></li>
+									<li><span class="labeling bg2">복학 신청</span> <span>0건</span></li>
+								</ul>
+								<div class="detail-rate">현재 유효중인 휴/복학 신청 정보</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="rec_tab">
+						<ul class="tab_03">
+							<li class="fst active"><a href="#none" class="tab-link" onclick="return false;">졸업 요건 대비 현황</a></li>
+							<li><a href="#none" class="tab-link" onclick=" return false;"">이수 구분별 현황</a></li>
+							<li><a href="#none" class="tab-link" onclick=" return false;"">학기별 성적</a></li>
+						</ul>
+					</div>
+					<!-- 탭 컨텐츠 영역 -->
+					<div class="contents_in">
+
+						<!-- 탭1 -->
+						<div class="support_content section_wrap">
+
+							<div class="tabBox">
+								<h4 class="sub_title ">학점 이수 현황</h4>
+								<div class="sub_cont">
+									
+									<p class="sub_desc mb5">
+										<!-- 이수 충족 / 미충족에 따라 파일명 끝의 -on / -off 로 구분해야 함. .badge-chk 클래스를 활용하면 되겠습니다.-->
+										<span><i class="badge-chk"><img src="../img/icon_dBadge-off.png" alt=""></i> 총 이수학점</span>
+										<span class="sm-rate"><strong>99</strong>(110) / 120학점</span>
+									</p>
+									<div class="bar">
+										<span class="bar-stat">82.5%</span>
+										<div class="bar-fill b-bg_pblue" style="--percent:82.5%"></div>
+									</div>
+								</div>
+
+								<div class="btm_total">
+									<div class="btm_main">
+										<h4 class="sub_title ">졸업까지 남은 학점</h4>
+										<span class="sm-rate">아래 요건을 충족하면 졸업이 가능합니다.</span>
+									</div>
+									<div class="btm_sub">
+										<p class="rate">21학점</p>
+										<span class="sm-rate">(총 120학점 중 99학점 취득)</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="tabBox">
+								<h4 class="sub_title ">이수구분별 학점 이수 현황</h4>
+								<div class="sub_cont">
+									<ul class="wrap_half-bar">
+										<li>
+											<p class="sub_desc">
+												<span><i class="badge-chk"><img src="../img/icon_dBadge-off.png" alt=""></i> 전공필수</span>
+												<span class="sm-rate"><strong>27</strong> / 30학점</span>
+											</p>
+											<div class="bar">
+												<span class="bar-stat">90%</span>
+												<div class="bar-fill b-bg_orange" style="--percent:90%"></div>
+											</div>
+										</li>
+										<li>
+											<p class="sub_desc">
+												<span><i class="badge-chk"><img src="../img/icon_dBadge-on.png" alt=""></i> 교양필수</span>
+												<span class="sm-rate"><strong>36</strong> / 25학점</span>
+											</p>
+											<div class="bar">
+												<span class="bar-stat">104%</span>
+												<div class="bar-fill b-bg_ygreen" style="--percent:104%"></div>
+											</div>
+										</li>
+										<li>
+											<p class="sub_desc">
+												<span><i class="badge-chk"><img src="../img/icon_dBadge-on.png" alt=""></i> 전공선택</span>
+												<span class="sm-rate"><strong>36</strong> / 25학점</span>
+											</p>
+											<div class="bar">
+												<span class="bar-stat">100%</span>
+												<div class="bar-fill b-bg_blue" style="--percent:100%"></div>
+											</div>
+										</li>
+										<li>
+											<p class="sub_desc">
+												<span><i class="badge-chk"><img src="../img/icon_dBadge-off.png" alt=""></i> 교양선택</span>
+												<span class="sm-rate"><strong>36</strong> / 25학점</span>
+											</p>
+											<div class="bar">
+												<span class="bar-stat">33.33%</span>
+												<div class="bar-fill b-bg_yellow" style="--percent:33.33%"></div>
+											</div>
+										</li>
+										<li>
+											<p class="sub_desc">
+												<span><i class="badge-chk"><img src="../img/icon_dBadge-off.png" alt=""></i> 전공기초</span>
+												<span class="sm-rate"><strong>36</strong> / 25학점</span>
+											</p>
+											<div class="bar">
+												<span class="bar-stat">60%</span>
+												<div class="bar-fill b-bg_lblue" style="--percent:60%"></div>
+											</div>
+										</li>
+										<li>
+											<p class="sub_desc">
+												<span><i class="badge-chk"><img src="../img/icon_dBadge-off.png" alt=""></i> 교직과정</span>
+												<span class="sm-rate"><strong>36</strong> / 25학점</span>
+											</p>
+											<div class="bar">
+												<span class="bar-stat"></span>
+												<div class="bar-fill b-bg_pblue" style="--percent:0%"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="tabBox">
+								<h4 class="sub_title ">기타 졸업 요건</h4>
+								<div class="sub_cont">
+									<ul class="wrap_half-stat">
+										<li>
+											<p class="sub_desc">
+												<span><i class="badge-chk"><img src="../img/icon_dBadge-on.png" alt=""></i> 현장실습</span>
+												<span class="badge tx-white b-bg_ygreen">완료</span>
+											</p>
+										</li>
+										<li>
+											<p class="sub_desc">
+												<span><i class="badge-chk"><img src="../img/icon_dBadge-off.png" alt=""></i> 비교과 프로그램 참여</span>
+												<span class="sm-rate"><strong>38</strong> / 50점</span>
+											</p>
+										</li>					
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+						<!-- //탭1 -->
+
+						<!-- 탭2 -->
+						<div class="support_content section_wrap">
+
+							<div class="tabBox -half">
+								<div style="height: auto;">
+                  <div id="donutPie"></div>
+                </div>
+								<div class="list_summary">
+									<ul>
+										<li>
+											<div class="label_sum b-bg_orange">전공필수</div>
+											<div><strong>27학점</strong><span>29.0%</span></div>
+										</li>
+										<li>
+											<div class="label_sum b-bg_blue">전공선택</div>
+											<div><strong>27학점</strong><span>29.0%</span></div>
+										</li>
+										<li>
+											<div class="label_sum b-bg_lblue">전공기초</div>
+											<div><strong>27학점</strong><span>29.0%</span></div>
+										</li>
+										<li>
+											<div class="label_sum b-bg_ygreen">교양필수</div>
+											<div><strong>27학점</strong><span>29.0%</span></div>
+										</li>
+										<li>
+											<div class="label_sum b-bg_yellow">교양선택</div>
+											<div><strong>27학점</strong><span>29.0%</span></div>
+										</li>
+										<li>
+											<div class="label_sum b-bg_pblue">교직과목</div>
+											<div><strong>27학점</strong><span>29.0%</span></div>
+										</li>
+										<li class="total_sum">
+											<div>총 취득학점</div>
+											<div>93학점</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<!-- //탭2 -->
+
+						<!-- 탭3 -->
+						<div class="support_content section_wrap">
+							
+							<div class="tabBox">
+								<div class="wrap-table table-responsive">
+									
+									<table class="bodyTbl bdl bdr">
+										<colgroup>
+											<col style="width:8%;">
+											<col style="width:3%;">
+											<col style="width:5%;">
+											<col style="width:20%;">
+											<col style="width:8%;">
+											<col style="width:5%;">
+											<col style="width:8%;">
+											<col style="width:8%;">
+											<col style="width:8%;">
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th rowspan="8">2024-1학기</th>
+												<th>No</th>
+												<th>이수구분</th>
+												<th>교과목명</th>
+												<th>과목코드</th>
+												<th>강좌번호</th>
+												<th>학점</th>
+												<th>성적</th>
+												<th>평점</th>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td><div class="label_sum b-bg_orange">전공필수</div></td>
+												<td>간호관리학</td>
+												<td>2223778</td>
+												<td>123</td>
+												<td>3</td>
+												<td>A+</td>
+												<td>4.5</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td><div class="label_sum b-bg_blue">전공선택</div></td>
+												<td>임상실무영어</td>
+												<td>22252211</td>
+												<td>235</td>
+												<td>2</td>
+												<td>A0</td>
+												<td>4.0</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td><div class="label_sum b-bg_lblue">전공기초</div></td>
+												<td>정보활용</td>
+												<td>22407823</td>
+												<td>422</td>
+												<td>2</td>
+												<td>B+</td>
+												<td>3.5</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td><div class="label_sum b-bg_ygreen">교양필수</div></td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td><div class="label_sum b-bg_yellow">교양선택</div></td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+											</tr>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td><div class="label_sum b-bg_pblue">교직과목</div></td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+											</tr>
+
+											<tr class="tr-tfoot">
+												<td colspan="5"></td>
+												<td>취득학점: <strong>15학점</strong></td>
+												<td></td>
+												<td><strong>4.06</strong> / 4.5</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+
+								<div class="wrap-table table-responsive">
+									
+									<table class="bodyTbl bdl bdr">
+										<colgroup>
+											<col style="width:8%;">
+											<col style="width:3%;">
+											<col style="width:5%;">
+											<col style="width:20%;">
+											<col style="width:8%;">
+											<col style="width:5%;">
+											<col style="width:8%;">
+											<col style="width:8%;">
+											<col style="width:8%;">
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th rowspan="8">2023-2학기</th>
+												<th>No</th>
+												<th>이수구분</th>
+												<th>교과목명</th>
+												<th>과목코드</th>
+												<th>강좌번호</th>
+												<th>학점</th>
+												<th>성적</th>
+												<th>평점</th>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td><div class="label_sum b-bg_orange">전공필수</div></td>
+												<td>4차산업과간호정보</td>
+												<td>22000167</td>
+												<td>138</td>
+												<td>3</td>
+												<td>A+</td>
+												<td>4.5</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td><div class="label_sum b-bg_blue">전공선택</div></td>
+												<td>국제간호의이해</td>
+												<td>22000073</td>
+												<td>112</td>
+												<td>2</td>
+												<td>A0</td>
+												<td>4.0</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td><div class="label_sum b-bg_lblue">전공기초</div></td>
+												<td>두원리더십</td>
+												<td>22000162</td>
+												<td>52</td>
+												<td>2</td>
+												<td>B+</td>
+												<td>3.5</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td><div class="label_sum b-bg_ygreen">교양필수</div></td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td><div class="label_sum b-bg_yellow">교양선택</div></td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+											</tr>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td><div class="label_sum b-bg_pblue">교직과목</div></td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+												<td>...</td>
+											</tr>
+
+											<tr class="tr-tfoot">
+												<td colspan="5"></td>
+												<td>취득학점: <strong>15학점</strong></td>
+												<td></td>
+												<td><strong>4.06</strong> / 4.5</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+							</div>			
+						</div>
+						<!-- //탭3 -->
+					</div> 
+					<!-- //탭 컨텐츠 영역 -->
+
+
+
+      </div>
+      <!-- // 컨텐츠 영역 -->
+			
+        
+
+
+			<div id="FOOTER_AREA" class="bottom-button-wrap">
+        <a href="#" class="button grey size-mid min-width">목록</a>
+				<a href="#" class="button gray-line size-mid min-width">학과 홈</a>
+			</div>
+
+		</div>
+	</section>
+	<!-- // sub Container -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script>
+
+	$(function(){
+
+		$(".system-btn").each(function(idx){
+			
+			const $this = $(this);
+			$this.hover(
+				function(){
+					$this.next().animate({opacity: '1'}, 300);
+				},
+				function(){
+					$this.next().animate({opacity: '0'}, 50);
+				}
+			);
+		});
+
+		$(window).on('load resize', function() {
+			var windowWidth = $(window).width();
+			
+			$('.swap-img').each(function() {
+					if (windowWidth < 768) {
+							$(this).attr('src', $(this).data('mobile'));
+					} else {
+							$(this).attr('src', $(this).data('desktop'));
+					}
+				});
+			});
+
+
+      $("#allChk").click(function() {
+        if($("#allChk").is(":checked")) $("input[name=chk]").prop("checked", true);
+        else $("input[name=chk]").prop("checked", false);
+      });
+
+      $("input[name=chk]").click(function() {
+        var total = $("input[name=chk]").length;
+        var checked = $("input[name=chk]:checked").length;
+
+        if(total != checked) $("#allChk").prop("checked", false);
+        else $("#allChk").prop("checked", true); 
+      });
+
+    
+
+			// 탭 클릭 이벤트
+    $('.tab_03 li a').click(function(e) {
+        e.preventDefault(); // 링크 이동 방지
+
+        // 1. 탭 버튼 활성화 상태 변경
+        $('.tab_03 li').removeClass('active');
+        $(this).parent('li').addClass('active');
+
+        // 2. 클릭한 탭의 인덱스(0, 1, 2) 가져오기
+        var index = $(this).parent('li').index();
+
+        // 3. 내용 영역 전부 숨기고, 해당 인덱스만 보이기
+        $('.support_content').hide();
+        $('.support_content').eq(index).stop().fadeIn(400); // 부드럽게 나타나기
+    });
+
+    // 초기 설정: 첫 번째 내용만 보여주기
+    $('.support_content').hide();
+    $('.support_content').eq(0).show();
+			
+			// 1. 공통 함수: 특정 인덱스의 탭을 활성화하는 기능
+			function activeTab(index) {
+					// 모든 탭에서 active 클래스 제거하고 클릭한 것만 추가
+					$('.tab_03 li').removeClass('active');
+					$('.tab_03 li').eq(index).addClass('active');
+
+					// 모든 컨텐츠 숨기고 해당 인덱스 컨텐츠만 보이기
+					$('.support_content').hide();
+					$('.support_content').eq(index).stop().fadeIn(400);
+			}
+
+			// 2. 서브 페이지 내부에서 탭을 클릭했을 때 작동
+			$('.tab_03 li a').click(function(e) {
+					e.preventDefault(); // 페이지 새로고침 방지
+					var index = $(this).parent('li').index();
+					activeTab(index);
+			});
+
+			// 3. 메인에서 링크(#tab)를 타고 들어왔을 때 작동
+			var hash = window.location.hash; // URL의 #tab1 등을 읽어옴
+
+			if (hash && hash.indexOf('#tab') !== -1) {
+					var tabIdx = hash.replace('#tab', ''); // #tab1에서 숫자 1만 추출
+					activeTab(tabIdx);
+
+					// 선택사항: 탭 위치로 화면 스크롤 (아이콘 누르고 들어왔을 때 바로 보이게)
+					setTimeout(function() {
+							$('html, body').animate({
+									scrollTop: $(".rec_tab").offset().top - 150 
+							}, 500);
+					}, 300);
+			} else {
+					// 해시가 없으면 기본으로 첫 번째(0번) 탭 보이기
+					activeTab(0);
+			}
+
+
+		// .bar-fill 의 width 값이 100퍼 이상일 때
+		// 게이지 바의 스탯 색상을 흰색으로 바뀌게 함
+		// 100센트 미만 시 #333 색상 유지됨
+		function checkBarStats() {
+			const bars = document.querySelectorAll('.bar-fill');
+
+			bars.forEach(bar => {
+				// 계산된 스타일에서 --percent 변수 값을 가져옴
+				const percentValue = getComputedStyle(bar).getPropertyValue('--percent').trim();
+				
+				// % 기호를 제거하고 숫자로 변환
+				const numericValue = parseFloat(percentValue);
+
+				if (numericValue >= 100) {
+					bar.classList.add('is-full');
+					// 형제 요소 중 .bar-stat을 찾아 색상 변경
+					const barStat = bar.parentElement.querySelector('.bar-stat');
+					if (barStat) {
+						barStat.style.color = 'white';
+					}
+				}
+			});
+		}
+
+		// 페이지 로드 완료 시 실행
+		window.addEventListener('DOMContentLoaded', checkBarStats);
+
+
+
+
+		/*/////////////////// 차트 모음 ///////////////////*/
+
+		/* 도넛형 파이 차트 */
+		var options = {
+          series: [29.0, 38.7, 19.4, 12.9, 0, 0],
+					labels: [
+					'전공필수: 24학점',
+					'전공선택: 36학점',
+					'전공기초: 18학점',
+					'교양필수: 12학점',
+					'교양선택: 0학점',
+					'교직과목: 0학점'
+					],
+					colors: ['#f56538', '#4e79ff','#29d7ee', '#9bcd3d', '#fdc521', '#785eff'],
+          chart: {
+						height: 400,
+          	type: 'donut',
+        },
+        responsive: [{
+          breakpoint: 1349,
+          options: {
+            chart: {
+              width: 400
+            }
+          }
+        },{
+          breakpoint: 580,
+          options: {
+            chart: {
+              width: '90%',
+							height: '70%',
+            }
+          }
+        },{
+          breakpoint: 510,
+          options: {
+            chart: {
+              width: '96%',
+							height: 'auto',
+            },
+						plotOptions: {
+							pie: {
+								//customScale: 1.1, // 차트 크기를 더 키움
+								offsetY: -3,      // 차트를 아래로 살짝 밀어 범례와 밀착
+							}
+						},
+						legend: {
+							position: 'bottom',
+							offsetY: 0,       // 범례를 위로 끌어올림 (차트와의 간격 축소)
+							itemMargin: {
+								vertical: 2      // 범례 줄 간격 최소화
+							}
+						},
+
+						grid: {
+							 padding: {
+								top: 0,
+								bottom: 8        // 하단 패딩 제거
+							}
+						}
+          }
+        }],
+			dataLabels: {
+				enabled: false,
+				formatter: function (val) {
+					return val + "%"
+				},
+				dropShadow: {
+				},
+			},
+			legend: {
+			show: true,
+			position: 'bottom'
+			},
+			
+
+  	};
+
+		var chart = new ApexCharts(document.querySelector("#donutPie"), options);
+		chart.render();
+		/* //도넛형 파이 차트*/
+
+
+		/* 라디얼 도넛 차트*/
+
+var options = {
+	  chart: {
+			height: 210,
+			type: 'radialBar'
+	  },
+	  series: [87, 79.8, 89.5],
+	  labels: [
+		'대학발전계획 (24개)',
+		'기관평가인증 (18개)',
+		'부서일반업무 (45개)'
+	  ],
+	  colors: ['#4e79ff', '#38C976', '#FF5A5A'],
+
+	  plotOptions: {
+		radialBar: {
+		  hollow: {
+			margin: 10,
+			size: '35%',       // ★ 도넛처럼 중앙을 더 크게 비움
+		  },
+		  track: {
+			strokeWidth: '70%'
+		  },
+		  dataLabels: {
+				name: {
+					show: true,
+					fontSize: '16px',
+					offsetY: 22
+				},
+				value: {
+					show: true,
+					fontSize: '20px',
+					formatter: function (val, opts) {
+					const counts = [24, 18, 45];
+					return counts[opts.seriesIndex] + "개 (" + val + "%)";
+					}
+				},
+				total: {
+					show: false   // 필요하면 전체 값 표시 가능
+				}
+		  }
+		}
+	  },
+
+	  legend: {
+		show: true,
+		position: 'bottom'
+	  }
+	};
+
+	var chart = new ApexCharts(document.querySelector("#donutRadial"), options);
+	chart.render();
+
+  /* //라디얼 도넛 차트*/
+
+
+		
+
+
+	});
+
+
+
+</script>
+</body>
+</html>

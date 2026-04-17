@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+  <!--[if IE 8 ]> <html class="no-js lt-ie9 ie8" lang="ko-KR">
+    <![endif]--><!--[if IE 9 ]> <html class="no-js lt-ie10 ie9" lang="ko-KR">
+    <![endif]--><!--[if (gte IE 10)|!(IE)]><!-->
+  <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>두원공과대학교 스마트교육행정시스템</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,800,900,500">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/board.css?v=1">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2">
+
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<link rel="stylesheet" href="/css/jquery-ui.css">
+<link rel="stylesheet" href="/css/jquery-ui-timepicker-addon.css">
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<script type="text/javascript" src="/lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-sliderAccess.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="/lib/jquery.play.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/js/jquery.ncs.js"></script>
+<script type="text/javascript" src="/lib/jquery.form.js"></script>
+<script type="text/javascript" src="/lib/placeholders.min.js"></script>
+
+<link rel="stylesheet" href="/css-new/responsive.css?v=1">
+<script type="text/javascript" src="/js/jquery.ncs.new.js?v=1"></script>
+<script src="https://kit.fontawesome.com/6026cbbd9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="wrap-new">
+	<!-- Header -->
+
+  <!-- 관리자 -->
+	<header id="header-new">
+		<div class="login-new">
+			<div class="wrap-admin">
+				<i class="icon admin"></i><span><a href="#">시스템관리자님</a> 환영합니다.</span>
+			</div>
+			<div class="btn-area">
+				<a href="#" class="button system-btn"><span>로그아웃</span></a>
+			</div>
+		</div>
+
+		<div class="header-new">
+			
+			<div class="col-left">
+				<h1>
+					<a href="../login.html">
+						<picture>
+							<source media="(max-width: 1024px)" srcset="../img/logo_doowon-wh.svg">
+							<source media="(min-width: 1025px)" srcset="../img/logo_doowon-ori.svg">
+							<img src="../img/logo_doowon-ori.svg" alt="두원공과대학교 스마트교육행정시스템">
+						</picture>
+					</a>
+				</h1>
+			</div>
+			<div class="col-right">
+				
+
+				<!-- Nav -->
+				<nav id="nav-new">
+					<div class="mobile-menu xs-show"><a href="#none"><i class="icon mb-menu"></i></a>
+						<span>수강신청</span>
+					</div>
+					<ul class="nav-new">
+						<li class="">
+							<a href="#none">나의 주요 현황</a>
+							<ul class="nav-sub">
+								<li><a href="sub0_myMain.html">나의 주요 현황</a></li>
+							</ul>
+						</li>
+						<li class="active">
+							<a href="#none">수강신청</a>
+							<ul class="nav-sub">
+								<li><a href="sub1_01-1.html">강좌 검색</a></li>
+								<li><a href="sub1_02-1.html">수강 신청</a></li>
+								<li><a href="sub1_02-2.html">수강 신청 내역</a></li>
+								<li><a href="#">시간표 조회</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#none">나의 학점 취득현황</a>
+							<ul class="nav-sub">
+								<li><a href="#">나의 취득학점</a></li>
+								<li><a href="#">이수구분별 학점현황</a></li>
+								<li><a href="#">학기별 성적 조회</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#none">강의평가</a>
+							<ul class="nav-sub">
+								<li><a href="#">수강 교과목 조회 및<br>강의평가 참여현황</a></li>
+								<li><a href="sub2_03-1.html">교과목별 강의평가 참여</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#none">휴복학 신청</a>
+							<ul class="nav-sub">
+								<li><a href="sub4_00-1.html">휴학 신청</a></li>
+								<li><a href="sub4_00-2.html">복학 신청</a></li>
+								<li><a href="#">신청 현황조회</a></li>
+								<li><a href="#">증빙서류 업로드</a></li>
+							</ul>
+						</li>
+						<li class="">
+							<a href="#none">공지사항</a>
+							<ul class="nav-sub">
+								<li><a href="#">공지사항</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<!-- //Nav -->
+			</div>
+		</div>
+	</header>
+	<!-- //Header -->
+
+
+	<!-- Container --> 
+	<section class="sub-container" >
+
+		<div class="mobile-lnb xs-show">
+			<select id="lnbOperationSelect" class="" onchange="goLnb(this, '', '');">
+				<option value="">강좌 검색</option>
+				<option value="">수강신청</option>
+				<option selected=""  value="">수강신청 내역</option>
+				<option value="">시간표 조회</option>
+			</select>
+		</div>
+
+		<!-- 사이드메뉴시작 -->
+		<div class="col-lnb">
+
+			<div class="lnb-title">
+				<p>수강신청</p>
+			</div>
+
+			<!-- 진짜메뉴시작 -->
+      <div class="lnb lnb-t2 xs-hidden">
+				
+				<div class="lnb-menu ">
+					<a href="sub1_01-1.html">
+						<p class="">강좌 검색</p>
+					</a>
+				</div>
+        
+				<div class="lnb-menu ">
+					<a href="sub1_02-1.html">
+						<p class="">수강 신청</p>
+					</a>
+				</div>
+              
+				<div class="lnb-menu active">  
+					<a href="sub1_02-2.html">
+						<p class="active">수강 신청 내역</p>
+					</a>
+				</div>
+
+				<div class="lnb-menu ">  
+					<a href="#">
+						<p class="">시간표 조회</p>
+					</a>
+				</div>
+
+			</div>
+			<!-- 진짜메뉴끝 -->
+
+		</div>
+		<!-- 사이드메뉴끝 -->
+
+	
+		
+	
+	
+		<div class="col-contents full-contents">
+			<div class="subCon">
+				<!-- 컨텐츠 영역 -->
+          <h3>수강 신청 내역</h3>
+					 	
+					<div class="tabBox -infoWrap">
+						<div>
+							<div class="info-icon">
+								<img src="../img/icon_bigstudent.png">
+							</div>
+						</div>
+						<div class="info-person">
+							<p>김두원 (42412345)</p>
+							<span>간호학과ㆍ2학년ㆍ재학</span>
+						</div>
+						<div class="info-get">
+							<p><em>●</em> 신청 학점</p>
+							<span><strong><i></i>15</strong> / 21</span>
+						</div>
+						<div class="info-get">
+							<p><em>●</em> 수강 과목</p>
+							<span><strong>6강좌</strong></span>
+						</div>
+					</div>
+
+					<!-- 시간표 멀티 테이블 시작 -->
+					<div class="tabBox-list ty2">
+
+						<!-- 탭1 -->
+						<div class="tabBox-item">
+
+							<h4>이수구분별 학점 취득 현황</h4>
+							<div class="chart-wrapBox-list">
+								<div class="chart-wrapGroup cw1">
+									<div id="sub-chart1" class="dash-chart"></div>
+									<p class="sub-chart-exp"><strong>75%</strong>전체 이수율</p>
+								</div>
+
+
+								<!-- 차트2 - 교과목CQI 작성 현황 -->
+								<!-- <div class="chart-wrap cw2"> -->
+									
+									<ul class="chart-wrapGroup">
+
+										<li class="chartBar-wrap">
+											<p class="sub_desc mb5">
+												<span>전공필수</span>
+												<span class="sm-rate"><strong>15</strong> / 15학점</span>
+											</p>
+											<div class="chart-container">
+												<div class="stackBar sBar-1" style="--percent:80%;"></div>
+												<div class="stackBar sBar-2" style="--percent:20%;"></div>
+												<div class="stackBar sBar-3" style="--percent:0%;"></div>
+											</div>
+											<div class="sBar-label">
+												<p><em class="dot-sBar-1">●</em> 이수: 12학점</p>
+												<p><em class="dot-sBar-2">●</em> 신청: 3학점</p>
+												<p><em class="dot-sBar-3">●</em> 잔여: 0학점</p>
+											</div>
+										</li>
+
+										<li class="chartBar-wrap">
+											<p class="sub_desc mb5">
+												<span>전공선택</span>
+												<span class="sm-rate"><strong>8</strong> / 12학점</span>
+											</p>
+											<div class="chart-container">
+												<div class="stackBar sBar-1" style="--percent:66.666%;"></div>
+												<div class="stackBar sBar-2" style="--percent:0%;"></div>
+												<div class="stackBar sBar-3" style="--percent:33.334%;"></div>
+											</div>
+											<div class="sBar-label">
+												<p><em class="dot-sBar-1">●</em> 이수: 8학점</p>
+												<p><em class="dot-sBar-2">●</em> 신청: 0학점</p>
+												<p><em class="dot-sBar-3">●</em> 잔여: 4학점</p>
+											</div>
+										</li>
+
+										<li class="chartBar-wrap">
+											<p class="sub_desc mb5">
+												<span>전공기초</span>
+												<span class="sm-rate"><strong>42</strong> / 48학점</span>
+											</p>
+											<div class="chart-container">
+												<div class="stackBar sBar-1" style="--percent:75%;"></div>
+												<div class="stackBar sBar-2" style="--percent:12.5%;"></div>
+												<div class="stackBar sBar-3" style="--percent:12.5%;"></div>
+											</div>
+											<div class="sBar-label">
+												<p><em class="dot-sBar-1">●</em> 이수: 36학점</p>
+												<p><em class="dot-sBar-2">●</em> 신청: 6학점</p>
+												<p><em class="dot-sBar-3">●</em> 잔여: 6학점</p>
+											</div>
+										</li>
+
+										<li class="chartBar-wrap">
+											<p class="sub_desc mb5">
+												<span>교양필수</span>
+												<span class="sm-rate"><strong>24</strong> / 30학점</span>
+											</p>
+											<div class="chart-container">
+												<div class="stackBar sBar-1" style="--percent:50%;"></div>
+												<div class="stackBar sBar-2" style="--percent:30%;"></div>
+												<div class="stackBar sBar-3" style="--percent:20%;"></div>
+											</div>
+											<div class="sBar-label">
+												<p><em class="dot-sBar-1">●</em> 이수: 15학점</p>
+												<p><em class="dot-sBar-2">●</em> 신청: 9학점</p>
+												<p><em class="dot-sBar-3">●</em> 잔여: 6학점</p>
+											</div>
+										</li>
+
+										<li class="chartBar-wrap">
+											<p class="sub_desc mb5">
+												<span>교양선택</span>
+												<span class="sm-rate"><strong>24</strong> / 30학점</span>
+											</p>
+											<div class="chart-container">
+												<div class="stackBar sBar-1" style="--percent:50%;"></div>
+												<div class="stackBar sBar-2" style="--percent:30%;"></div>
+												<div class="stackBar sBar-3" style="--percent:20%;"></div>
+											</div>
+											<div class="sBar-label">
+												<p><em class="dot-sBar-1">●</em> 이수: 15학점</p>
+												<p><em class="dot-sBar-2">●</em> 신청: 9학점</p>
+												<p><em class="dot-sBar-3">●</em> 잔여: 6학점</p>
+											</div>
+										</li>
+
+									</ul>
+
+							</div>
+							<!-- //차트2종 -->
+							
+						</div>
+						<!-- //탭1 -->
+
+						<!-- 탭2 -->
+						<div class="tabBox-item timeTab">
+							<h4 class="ty2-timeTable">시간표</h4>
+							<div class="group-class">
+								<div class="group-class-inBtn">
+									<button class="button gray-line rad-normal btn-down"><span class="material-symbols-outlined">download</span> 이미지 저장</button>
+									<button class="button gray-line rad-normal btn-down"><span class="material-symbols-outlined">download</span> 인쇄</button>
+								</div>
+								<span class="label_sum b-bg_orange">전필</span>
+								<span class="label_sum b-bg_blue">전선</span>
+								<span class="label_sum b-bg_lblue">전기</span>
+								<span class="label_sum b-bg_ygreen">교필</span>
+								<span class="label_sum b-bg_yellow">교선</span>
+								<span class="label_sum b-bg_pblue">교직</span>
+							</div>
+							<div class="wrap-table table-responsive">
+								
+								<!-- 그리드 테이블 -->
+								<div class="timetable-container">
+									<!-- 요일 헤더 -->
+									<div style="grid-column: 1; grid-row: 1;"></div>
+									<div class="grid-cell header-cell" style="grid-column: 2; grid-row: 1;">월</div>
+									<div class="grid-cell header-cell" style="grid-column: 3; grid-row: 1;">화</div>
+									<div class="grid-cell header-cell" style="grid-column: 4; grid-row: 1;">수</div>
+									<div class="grid-cell header-cell" style="grid-column: 5; grid-row: 1;">목</div>
+									<div class="grid-cell header-cell" style="grid-column: 6; grid-row: 1;">금</div>
+									<div class="grid-cell header-cell" style="grid-column: 7; grid-row: 1;">토</div>
+
+									<!-- 시간 라벨 class = header-cell (반복문 처리 권장) -->
+									<!-- 빈 과목 칸 class = grid-cell -->
+									<div class="header-cell" style="grid-column: 1; grid-row: 2;">
+										1
+										<div class="class-info">
+											<p>[1교시]</p>
+											<p>안성: 09:20 ~ 10:10<br>파주: 09:00 ~ 09:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 2;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 2;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 2;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 2;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 2;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 2;"></div>
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 3;">
+										2
+										<div class="class-info">
+											<p>[2교시]</p>
+											<p>안성: 10:20 ~ 11:10<br>파주: 10:00 ~ 10:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 3;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 3;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 3;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 3;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 3;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 3;"></div>
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 4;">
+										3
+										<div class="class-info">
+											<p>[3교시]</p>
+											<p>안성: 11:20 ~ 12:10<br>파주: 11:00 ~ 11:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 4;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 4;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 4;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 4;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 4;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 4;"></div>
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 5;">
+										4
+										<div class="class-info">
+											<p>[4교시]</p>
+											<p>안성: 12:20 ~ 13:10<br>파주: 12:00 ~ 12:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 5;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 5;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 5;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 5;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 5;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 5;"></div>
+									
+									<div class="header-cell" style="grid-column: 1; grid-row: 6;">
+										5
+										<div class="class-info">
+											<p>[5교시]</p>
+											<p>안성: 13:20 ~ 14:10<br>파주: 13:00 ~ 13:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 6;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 6;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 6;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 6;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 6;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 6;"></div>
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 7;">
+										6
+										<div class="class-info">
+											<p>[6교시]</p>
+											<p>안성: 14:20 ~ 15:10<br>파주: 14:00 ~ 14:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 7;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 7;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 7;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 7;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 7;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 7;"></div>
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 8;">
+										7
+										<div class="class-info">
+											<p>[7교시]</p>
+											<p>안성: 15:20 ~ 16:10<br>파주: 15:00 ~ 15:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 8;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 8;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 8;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 8;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 8;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 8;"></div>
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 9;">
+										8
+										<div class="class-info">
+											<p>[8교시]</p>
+											<p>안성: 16:20 ~ 17:10<br>파주: 16:00 ~ 16:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 9;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 9;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 9;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 9;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 9;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 9;"></div>
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 10;">
+										9
+										<div class="class-info">
+											<p>[9교시]</p>
+											<p>안성: 17:20 ~ 18:10<br>파주: 17:00 ~ 17:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 10;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 10;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 10;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 10;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 10;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 10;"></div>
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 11;">
+										10
+										<div class="class-info">
+											<p>[10교시]</p>
+											<p>안성: 18:20 ~ 19:10<br>파주: 18:00 ~ 18:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 11;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 11;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 11;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 11;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 11;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 11;"></div>
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 12;">
+										11
+										<div class="class-info">
+											<p>[11교시]</p>
+											<p>안성: 19:20 ~ 20:10<br>파주: 19:00 ~ 19:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 12;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 12;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 12;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 12;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 12;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 12;"></div>
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 13;">
+										12
+										<div class="class-info">
+											<p>[12교시]</p>
+											<p>안성: 20:20 ~ 21:10<br>파주: 20:00 ~ 20:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 13;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 13;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 13;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 13;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 13;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 13;"></div>
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 14;">
+										13
+										<div class="class-info">
+											<p>[13교시]</p>
+											<p>안성: 21:20 ~ 22:10<br>파주: 21:00 ~ 21:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 14;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 14;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 14;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 14;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 14;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 14;"></div>
+
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 15;">
+										14
+										<div class="class-info">
+											<p>[14교시]</p>
+											<p>안성: 22:20 ~ 23:10<br>파주: 22:00 ~ 22:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 15;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 15;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 15;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 15;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 15;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 15;"></div>
+
+									<div class="header-cell" style="grid-column: 1; grid-row: 16;">
+										15
+										<div class="class-info">
+											<p>[15교시]</p>
+											<p>안성: 23:20 ~ 24:10<br>파주: 23:00 ~ 23:50</p>
+										</div>
+									</div>
+									<div class="grid-cell" style="grid-column: 2; grid-row: 16;"></div>
+									<div class="grid-cell" style="grid-column: 3; grid-row: 16;"></div>
+									<div class="grid-cell" style="grid-column: 4; grid-row: 16;"></div>
+									<div class="grid-cell" style="grid-column: 5; grid-row: 16;"></div>
+									<div class="grid-cell" style="grid-column: 6; grid-row: 16;"></div>
+									<div class="grid-cell" style="grid-column: 7; grid-row: 16;"></div>
+
+									<!-- ****** 추가되는 과목 오버 레이어 ****** -->
+									<!-- lecture-item 에 요일 약어 추가 (mon, tue 같은) -->
+									<!-- 각 lecture-item 에 이수구분별 클래스 추가
+										/* 전필 클래스 */ ty1_orange
+										/* 전선 클래스 */ ty2_blue
+										/* 전기 클래스 */ ty3_lblue 
+										/* 교필 클래스 */ ty4_ygreen
+										/* 교선 클래스 */ ty5_yellow
+										/* 교직 클래스 */ ty6_pblue
+ 									-->
+									<!--
+										style="" 에 직접 grid-row 값 삽입
+										1교시는 2 부터 시작하며 2시간 연강이면 2 / 4 이런식으로 끝나는 교시 +1 값 입력 
+									-->
+
+									<!-- 월요일 2교시 전필 1시간 -->
+									<div class="lecture-item mon ty1_orange" style="grid-row: 3 / 4;" title="생명윤리의이해 이은원 간호관 3105">
+										<span class="lecture-title">생명윤리의이해</span>
+										<span>이은원<br>간호관 3105</span>
+									</div>
+
+									<!-- 수요일 1~2교시 교직 2시간 연강 -->
+									<div class="lecture-item wed ty6_pblue" style="grid-row: 2 / 4;">
+										<span class="lecture-title">생명윤리의이해</span>
+										<span>이은원<br>간호관 3105</span>
+									</div>
+
+									<!-- 목요일 1~2교시 교선 2시간 연강 -->
+									<div class="lecture-item thu ty5_yellow" style="grid-row: 2 / 4;">
+										<span class="lecture-title">학교폭력예방및학생의이해</span>
+										<span>이준수<br>간호관 1234</span>
+									</div>
+
+									<!-- 월요일 3~4교시 교필 2시간 연강 -->
+									<div class="lecture-item mon ty4_ygreen" style="grid-row: 4 / 6;">
+										<span class="lecture-title">사고와표현</span>
+										<span>최광임<br>간호관 3104</span>
+									</div>
+
+									<!-- 화요일 3~4교시 전선 2시간 연강 -->
+									<div class="lecture-item tue ty2_blue" style=" grid-row: 4 / 6;">
+										<span class="lecture-title">다문화간호</span>
+										<span>김미정<br>간호관 3104</span>
+									</div>
+
+									<!-- 목요일 3~4교시 교필 2시간 연강 -->
+									<div class="lecture-item thu ty4_ygreen" style="grid-row: 4 / 6;">
+										<span class="lecture-title">정보활용1</span>
+										<span>이숙영<br>간호관 3102</span>
+									</div>
+
+									<!-- 월요일 6~9교시 전필 4시간 연강 -->
+									<div class="lecture-item mon ty1_orange" style=" grid-row: 7 / 11;">
+										<span class="lecture-title">기본간호학실습1</span>
+										<span>최광임<br>간호관 3104</span>
+									</div>
+
+									<!-- 화요일 6~7교시 전기 2시간 연강 -->
+									<div class="lecture-item tue ty3_lblue" style=" grid-row: 7 / 9;">
+										<span class="lecture-title">인체의구조와기능1</span>
+										<span>김수연<br>간호관 3104</span>
+									</div>
+
+									<!-- 수요일 6~7교시 교선 2시간 연강 -->
+									<div class="lecture-item wed ty5_yellow" style="grid-row: 7 / 9;">
+										<span class="lecture-title">ROSE운동입문</span>
+										<span>남성현<br>간호관 3101</span>
+									</div>
+
+									<!-- 화요일 8~9교시 교필 2시간 연강 -->
+									<div class="lecture-item tue ty4_ygreen" style=" grid-row: 9 / 11;">
+										<span class="lecture-title">두원리더십</span>
+										<span>김미정<br>간호관 3207</span>
+									</div>
+								</div>
+
+								
+							</div>
+
+						</div>
+						<!-- //탭2 -->
+
+					</div>
+					<!-- //시간표 멀티 테이블 끝 -->
+
+					
+					<!-- 기존 탭 테이블 -->
+					<div class="tabBox">
+
+						<h4>수강신청 목록</h4>
+						<div class="wrap-table table-responsive">
+							<table class="headTbl bdl bdr">
+								<colgroup>
+									<col style="width:6%;">
+									<col style="width:17%;">
+									<col style="width:4%;">
+									<col style="width:4%;">
+									<col style="width:4%;">
+									<col style="width:3%;">
+									<col style="width:5%;">
+									<col style="width:6%;">
+									<col style="width:7%;">
+									<col style="width:3%;">
+									<col style="width:4%;">
+								</colgroup>
+
+								<thead>
+									<tr>
+										<th>이수구분</th>
+										<th>교과목명</th>
+										<th>과목코드</th>
+										<th>강좌번호</th>
+										<th>학점<br>(이론/실습)</th>
+										<th>학년</th>
+										<th>담당교수</th>
+										<th>요일/시간</th>
+										<th>강의실</th>
+										<th>비고</th>
+										<th>상태</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><div class="label_sum b-bg_orange">전공필수</div></td>
+										<td class="left">간호관리학</td>
+										<td>23778</td>
+										<td>123</td>
+										<td>3<br>(3/0)</td>
+										<td>2</td>
+										<td>김교수</td>
+										<td>월 / 1, 2 교시</td>
+										<td>간호관 203호</td>
+										<td></td>
+										<td><div class="badge bg_appComplete">수강확정</div></td>
+									</tr>
+									<tr>
+										<td><div class="label_sum b-bg_blue">전공선택</div></td>
+										<td class="left">임상실무영어</td>
+										<td>252211</td>
+										<td>235</td>
+										<td>2<br>(2/0)</td>
+										<td>1</td>
+										<td>최교수</td>
+										<td>수 / 3, 4 교시</td>
+										<td>간호관 303호</td>
+										<td></td>
+										<td><div class="badge bg_appComplete">수강확정</div></td>
+									</tr>
+									<tr>
+										<td><div class="label_sum b-bg_lblue">전공기초</div></td>
+										<td class="left">정보활용</td>
+										<td>407823</td>
+										<td>422</td>
+										<td>25<br>(3/0)</td>
+										<td>전체학년</td>
+										<td>이교수</td>
+										<td>화 / 5, 6교시</td>
+										<td>디자인관 101호</td>
+										<td><span class="badge retry">재수강</span></td>
+										<td><div class="badge bg_appComplete">수강확정</div></td>
+									</tr>
+									<tr>
+										<td><div class="label_sum b-bg_ygreen">교양필수</div></td>
+										<td class="left">...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td></td>
+										<td><div class="badge bg_appComplete">수강확정</div></td>
+									</tr>
+									<tr>
+										<td><div class="label_sum b-bg_yellow">교양선택</div></td>
+										<td class="left">...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td></td>
+										<td><div class="badge" style="background-color:#888; border-radius:150px; color:#fff;">수강대기</div></td>
+									</tr>
+									</tr>
+									<tr>
+										<td><div class="label_sum b-bg_pblue">교직과목</div></td>
+										<td class="left">...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td>...</td>
+										<td></td>
+										<td><div class="badge bg_appComplete">수강확정</div></td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="4">선택된 강좌 수 : 6강좌</td>
+										<td>15학점</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tfoot>
+							</table>
+
+						</div>
+					</div>
+					<!-- //기존 탭 테이블 끝 -->
+
+
+	
+				</div>
+				<!-- // 컨텐츠 영역 -->
+			</div>
+
+
+		</div>
+	</section>
+	<!-- //Container -->
+</div>
+
+
+
+<script>
+// Load the Visualization API and the corechart package.
+	google.charts.load('current', {'packages':['corechart']});
+
+	// Set a callback to run when the Google Visualization API is loaded.
+	google.charts.setOnLoadCallback(drawChart1);
+
+	// Callback that creates and populates a data table,
+	// instantiates the pie chart, passes in the data and
+	// draws it.
+	function drawChart1() {
+
+		// Create the data table.
+		var data = google.visualization.arrayToDataTable([
+			['Task', 'Curriculum Development Progress'],
+			['전체 이수율', 75],
+			['미이수', 25]
+		]);
+
+		// Set chart options
+		var options = {
+										chartArea:{
+											left: '10%',  // 여백을 %로 주면 더 유연합니다
+											top: '10%',
+											right:'10%',
+											width: "80%",
+											height: "80%",
+											// pieSliceText: 'none',
+										},
+										'legend': 'none',
+										// vAxis: {
+										// 	textPosition: 'none'
+										// },
+										// hAxis: {
+										// 	textPosition: 'none'
+										// },
+										'pieSliceText': 'none',
+										'pieStartAngle': 180, // 시작지점 각도 회전
+										//'legend': { position: 'bottom', alignment: 'center', maxLines: 4 },
+										// 'title':'교육과정 운영 현황',
+										'pieHole': 0.6,
+										'colors': ['#3f84f3', '#e5e7eb' ],
+										//'width':360,
+										//'height':360,
+										'sliceVisibilityThreshold':0
+									};
+
+		// Instantiate and draw our chart, passing in some options.
+		var chart = new google.visualization.PieChart(document.getElementById('sub-chart1'));
+		chart.draw(data, options);
+		
+	}
+window.addEventListener('resize', drawChart1);
+	google.charts.setOnLoadCallback(drawChart1);
+
+
+
+
+</script>
+
+</body>
+</html>

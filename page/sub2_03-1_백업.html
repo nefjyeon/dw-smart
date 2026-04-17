@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+  <!--[if IE 8 ]> <html class="no-js lt-ie9 ie8" lang="ko-KR">
+    <![endif]--><!--[if IE 9 ]> <html class="no-js lt-ie10 ie9" lang="ko-KR">
+    <![endif]--><!--[if (gte IE 10)|!(IE)]><!-->
+  <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>두원공과대학교 스마트교육행정시스템</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,800,900,500">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/board.css?v=1">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2">
+
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<link rel="stylesheet" href="/css/jquery-ui.css">
+<link rel="stylesheet" href="/css/jquery-ui-timepicker-addon.css">
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<script type="text/javascript" src="/lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-sliderAccess.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="/lib/jquery.play.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/js/jquery.ncs.js"></script>
+<script type="text/javascript" src="/lib/jquery.form.js"></script>
+<script type="text/javascript" src="/lib/placeholders.min.js"></script>
+
+<link rel="stylesheet" href="/css-new/responsive.css?v=1">
+<script type="text/javascript" src="/js/jquery.ncs.new.js?v=1"></script>
+<script src="https://kit.fontawesome.com/6026cbbd9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="wrap-new">
+	<!-- Header -->
+
+
+  <!-- 학생 -->
+	<header id="header-new">
+		<div class="login-new">
+			<div class="wrap-admin">
+				<i class="icon admin"></i><span><a href="#">시스템관리자님</a> 환영합니다.</span>
+			</div>
+			<div class="btn-area">
+				<a href="#" class="button system-btn"><span>로그아웃</span></a>
+			</div>
+		</div>
+
+		<div class="header-new">
+			
+			<div class="col-left">
+				<h1>
+					<a href="../login.html">
+						<picture>
+							<source media="(max-width: 1024px)" srcset="../img/logo_doowon-wh.svg">
+							<source media="(min-width: 1025px)" srcset="../img/logo_doowon-ori.svg">
+							<img src="../img/logo_doowon-ori.svg" alt="두원공과대학교 스마트교육행정시스템">
+						</picture>
+					</a>
+				</h1>
+			</div>
+			<div class="col-right">
+				
+				<!-- Nav -->
+				<nav id="nav-new">
+					<div class="mobile-menu xs-show"><a href="#none"><i class="icon mb-menu"></i></a>
+						<span>강의평가</span>
+					</div>
+					<ul class="nav-new">
+						<li class="">
+							<a href="#">대시보드</a>
+						</li>
+						<li class="">
+							<a href="#">수강신청</a>
+						</li>
+						<li class="">
+							<a href="#">나의 학점 취득 현황</a> 
+						</li>
+						<li class="active">
+							<a href="#">강의평가</a>
+						</li>
+						<li class="">
+							<a href="#">휴복학 신청</a>
+						</li>
+						<li class="">
+							<a href="#">공지사항</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- //Nav -->
+			</div>
+		</div>
+	</header>
+	<!-- //학생 -->
+	<!-- //Header -->
+
+
+	<!-- Container --> 
+	<section class="sub-container" >
+
+		<div class="mobile-lnb xs-show">
+			<select id="lnbOperationSelect" class="" onchange="goLnb(this, '', '');">
+				<option selected="" value="">강의 현황</option>
+				<option value="">서브메뉴 2</option>
+				<option value="">서브메뉴 3</option>
+			</select>
+		</div>
+
+		<!-- 사이드메뉴시작 -->
+		<div class="col-lnb">
+
+			<div class="lnb-title">
+				<p>강의평가</p>
+			</div>
+
+			<!-- 진짜메뉴시작 -->
+      <div class="lnb lnb2 xs-hidden">
+				
+				<div class="lnb-menu active ">
+					<a href="#">
+						<p class=" active">강의 현황</p>
+					</a>
+				</div>
+        
+				<div class="lnb-menu ">
+					<a href="#">
+						<p class="">서브메뉴 2</p>
+					</a>
+				</div>
+              
+				<div class="lnb-menu ">  
+					<a href="#">
+						<p class="">서브메뉴 3</p>
+					</a>
+				</div>
+
+			</div>
+			<!-- 진짜메뉴끝 -->
+
+		</div>
+		<!-- 사이드메뉴끝 -->
+
+
+
+    <!-- 관리자 -->
+		<div class="col-contents reduce-contents">
+			<div class="subCon">
+				<!-- 컨텐츠 영역 -->
+          <h3>교과목별 강의평가</h3>
+
+					<div class="tabBox">
+            
+ 						<div class="wrap-table table-responsive">
+							<table class="headTbl tdLine bdl bdr">
+								<colgroup>
+									<col style="width:5%">
+									<col style="width:7%">
+									<col style="width:10%">
+									<col style="width:10%">
+									<col style="width:auto">
+									<col style="width:12%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>NO.</th>
+										<th>년도</th>
+										<th>학기</th>
+										<th>이수구분</th>
+										<th>교과목명</th>
+										<th>강의평가</th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>2024</td>
+										<td>2학기</td>
+										<td>교양필수</td>
+										<td>영상과직업기초</td>
+										<td>
+											<!-- <button class="button d-orange">중간</button> <button class="button d-orange">기말</button> -->
+											<!-- 동아방송대 ncs survey 관련 파일 참조하여 활용하면 됩니다 -->
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic complete">중간</a>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic complete">기말</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>2</td>
+										<td>2024</td>
+										<td>2학기</td>
+										<td>교양선택</td>
+										<td>1인예술과창업실무</td>
+										<td>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic complete">중간</a>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic ">기말</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>3</td>
+										<td>2024</td>
+										<td>2학기</td>
+										<td>교양선택</td>
+										<td>영상저작권실무</td>
+										<td>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic complete">중간</a>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic complete">기말</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>4</td>
+										<td>2024</td>
+										<td>2학기</td>
+										<td>전공선택</td>
+										<td>교양다큐멘터리연출</td>
+										<td>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic complete">중간</a>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic ">기말</a>
+										</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>2024</td>
+										<td>2학기</td>
+										<td>전공선택</td>
+										<td>라이브콘텐츠제작</td>
+										<td>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic complete">중간</a>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic ">기말</a>
+										</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>2024</td>
+										<td>2학기</td>
+										<td>전공선택</td>
+										<td>영상미학</td>
+										<td>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic complete">중간</a>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic ">기말</a>
+										</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>2024</td>
+										<td>2학기</td>
+										<td>전공선택</td>
+										<td>콘텐츠프로듀싱세미나</td>
+										<td>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic complete">중간</a>
+											<a href="#" onclick="window.open('/myNcs/courseEvalPop.do?cm_seq=16&amp;s_seq=16963','수업평가','width=800,height=800,scrollbars=1').focus(); return false;" class="basic ">기말</a>
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+	
+					
+          <div class="wrap-btn -multi -dt">
+						<span>
+              <a href="sub2_01-2.html" class="btn btn-mid l-gray">목록</a>
+							<!-- <a href="sub4_01.html" class="btn btn-mid l-blue">미참여자 확인</a> -->
+            </span>
+						<span>
+							<!-- <a href="#none" class="btn btn-mid excel">목록정보(엑셀) 다운로드</a> -->
+							<!-- <a href="sub2_00-2.html" class="btn btn-mid d-gray">기본정보 등록</a> -->
+							<!-- <a href="sub4_01-1.html" class="btn btn-mid l-gray">수정</a> -->
+						</span>
+					</div>
+
+				</div>
+				<!-- // 컨텐츠 영역 -->
+			
+
+		</div>
+	</section>
+	<!-- // sub Container -->
+</div>
+
+
+<script>
+	
+
+
+	$(function(){
+
+		$(".system-btn").each(function(idx){
+			
+			const $this = $(this);
+			$this.hover(
+				function(){
+					$this.next().animate({opacity: '1'}, 300);
+				},
+				function(){
+					$this.next().animate({opacity: '0'}, 50);
+				}
+			);
+		});
+
+		$(window).on('load resize', function() {
+			var windowWidth = $(window).width();
+			
+			$('.swap-img').each(function() {
+					if (windowWidth < 768) {
+							$(this).attr('src', $(this).data('mobile'));
+					} else {
+							$(this).attr('src', $(this).data('desktop'));
+					}
+				});
+			});
+
+			/* data-target 값과 table 의 id 값을 연결하여 show hide 제어 */
+			$('.chkStyle [type=checkbox]').click(function() {
+        // 클릭된 체크박스의 data-target 값(대상 ID)을 가져옴
+        var targetId = $(this).data('target');
+        var $targetElement = $('#' + targetId);
+        
+        // 체크박스 상태에 따라 요소 보이기/숨기기
+        if ($(this).is(':checked')) {
+            $targetElement.show();
+        } else {
+            $targetElement.hide();
+        }
+    });
+			
+
+	});
+
+</script>
+</body>
+</html>

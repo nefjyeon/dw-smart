@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Header - Style */
+
+	.nav ul > li > a:hover{color:#009b96;}
+	.nav ul > li ol li a:hover{background:#000000;}
+	.subNav .tit{background:#4f4f4f;}
+	.bnarBtn p a{background:#4f4f4f url("/images/common/ico_rit.png") no-repeat 80% 50%;}
+	table.bodyTbl tbody tr td.evalsum{background:#eccbcb;}
+	table.bodyTbl tbody tr td.evalsum input{background:#eccbcb;}
+	.loginCon .submit a{background:#009b96;}
+	.loginCon .btn a{color:#009b96;}
+	.clsSysCon .tab ul li.on a{background:#009b96;}
+	.clsSysCon .sysBoxType0{border:1px solid #009b96;}
+	.clsSysCon .sysBoxType0 ul li a{border-bottom:1px solid #009b96;border-right:1px solid #009b96;}
+	.clsSysCon .sysBoxType0 ul li.on{background:#009b96;}
+	.clsSysCon .sysBoxType0 ul li+li a{border-right:1px solid #009b96;}
+	.jobBasCon .basList{border-top:2px solid #009b96;}
+	.jobBasCon .basList ul li.on{background-color: #009b96;}
+	.subOrder ul li.on p{background:#009b96;}
+	.listPop .txt{background:#009b96;}
+	.tabPop ul li.on a{background:#009b96;}
+	.schBox{border:1px solid #009b96;}
+	
+	/*개별 CSS */
+	/* 메인 바로가기 */
+	.mainCon .guideBtn{}
+	/* 로그인 sso */
+	.mainssologin {background: #3c4863 !important;}
